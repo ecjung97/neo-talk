@@ -1,6 +1,18 @@
-* {
+html {
+  height: 100%;
 }
-
+body {
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Pretendard", sans-serif;
+  fotn-weight: 400;
+  color: #333;
+}
 :root {
   --viewport1440: 1440;
   --viewport768: 768;
@@ -8,22 +20,6 @@
   --vwPercent: 100vw;
   --viewport-height: 100dvh;
 }
-
-body {
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: "Pretendard", sans-serif;
-  fotn-weight: 400;
-  color: #333;
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.common_content {
-  height: 100dvh;
-}
-
 .wrap {
   position: relative;
   top: 0;
