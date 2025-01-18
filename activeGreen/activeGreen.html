@@ -10,9 +10,12 @@
     <script src="../includeHTML.js"></script>
     <link rel="stylesheet" href="../common.css">
     <link rel="stylesheet" href="activeGreen.css">
+    <link rel="stylesheet" href="../common/header/header.css">
 </head>
 
 <body>
+    <div include-html="../common/header/header.html"></div>
+
     <main class="activeGreen_wrap">
         <!-- Header Section -->
         <article class="activeGreen_content_article">
@@ -748,12 +751,12 @@
     <!-- 모달 끝 -->
 
 
-
     <script src="./js/activeGreen.js"></script>
 </body>
 
 <script>
-    includeHTML();
-</script>
+    includeHTML(function () {
+        console.log('모든 HTML 포함이 완료되었습니다!');
+    });</script>
 
 </html>

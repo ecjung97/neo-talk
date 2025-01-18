@@ -61,14 +61,14 @@
 
 .activeGreen_content_article {
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     padding-bottom: 182px;
 }
 
 .activeGreen_header {
     background-color: #ffffff;
-    padding: 60px 0 10px;
+    padding: 48px 0 10px;
     text-align: left;
     position: relative;
 }
@@ -1185,6 +1185,10 @@
 
 /* 768px 이하 태블릿 */
 @media screen and (max-width: 768px) {
+    .activeGreen_header {
+        padding: 28px 0 10px;
+    }
+
     .activeGreen_reference_title {
         margin-bottom: 10px;
     }
@@ -1369,6 +1373,10 @@
 
 /* 480px 이하 모바일 */
 @media screen and (max-width: 480px) {
+    .activeGreen_header {
+        padding: 10px 0 10px;
+    }
+
     .divider_wrap {
         margin-bottom: 60px;
     }
@@ -1376,8 +1384,6 @@
     .info_section {
         margin-bottom: 80px;
     }
-
-
 
     .activeGreen_header_title {
         font-size: var(--font-title-xxl);
