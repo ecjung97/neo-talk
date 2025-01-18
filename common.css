@@ -1,0 +1,19 @@
+.common_flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.common_content {
+}
+
+.common_content {
+  flex: 1 auto;
+}
+
+:root {
+  --main-bg: #fff;
+  --btn-bg: #64a8ff;
+  --btn-hover: #e8f3ff;
+  --tile-bg: #4593fc;
+}
