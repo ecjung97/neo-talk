@@ -155,6 +155,7 @@ svg {
 
 /* main */
 .common_content {
+  padding-top: 84px;
   padding-bottom: 182px;
 }
 
@@ -821,6 +822,7 @@ svg {
 }
 
 .news-area .news-card-list li .item-normal-card .layer-share {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
