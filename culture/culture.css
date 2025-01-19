@@ -95,20 +95,21 @@ section {
   align-items: center; /* 수직 중앙 정렬 */
   width: 0.8333333333vw; /* 동그라미 크기 */
   height: 0.8333333333vw; /* 동그라미 크기 */
-  border: 1px solid #a8a8a8; /* 동그라미 테두리 */
+  border: 1px solid #64a8ff; /* 동그라미 테두리 */
   border-radius: 5.2083333333vw; /* 동그라미 모양 */
-  background-color: transparent; /* 기본 배경 투명 */
+  background-color: #e8f3ff; /* 기본 배경 투명 */
   margin-bottom: 20px;
 }
 .left-ul li.active a {
-  color: #191919; /* 활성화 상태에서 텍스트 색상 */
+  color: #fff; /* 활성화 상태에서 텍스트 색상 */
 }
 .left-ul li.active a::before {
   content: attr(data-text); /* 동그라미 안에 텍스트 표시 */
   font-size: 1.1111111111vw;
   font-weight: 700;
-  color: #191919; /* 텍스트 색상 */
-  background: #fff;
+  color: #fff; /* 텍스트 색상 */
+  background: #1957c2;
+  border: 1px solid #1957c2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +127,7 @@ section {
   z-index: 100; /* 다른 요소보다 위에 표시 */
   width: 50px; /* 버튼 너비 */
   height: 50px; /* 버튼 높이 */
-  background: #000000; /* 배경 색상 */
+  background: #191919; /* 배경 색상 */
   border-radius: 50%; /* 동그라미 모양 */
   display: flex; /* Flexbox로 정렬 */
   justify-content: center; /* 수평 중앙 정렬 */
@@ -190,7 +191,7 @@ section {
 .mission-container {
   width: 70%;
   height: 80vh;
-  background: #f8f8f8;
+  background: #e8f3ff;
   display: flex;
   border-radius: 30px;
   align-items: center;
@@ -519,6 +520,7 @@ section {
   font-weight: 700;
   line-height: 1.5;
   background-color: #191919;
+  border: 1px solid #191919;
   color: #fff;
   box-sizing: border-box;
   text-decoration: none;
@@ -527,8 +529,9 @@ section {
     width: calc(20 / var(--viewport1440) * var(--vwPercent));
     height: calc(20 / var(--viewport1440) * var(--vwPercent));
     margin-left: calc(14 / var(--viewport1440) * var(--vwPercent));
-    background: #ffffff;
+    background: #fff;
     border-radius: 50%;
+    border: 1px solid #fff;
   }
 }
 .work-title-br {
@@ -600,3 +603,11 @@ section {
     }
   }
 }
+/* .btn:hover {
+  background-color: #1957c2;
+  color: #fff;
+  & img {
+    background-color: ##1957c2;
+    border: 1px solid ##1957c2;
+  }
+} */

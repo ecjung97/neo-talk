@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".goal-ul div button");
-  const colors = ["#FAC6AC", "#FFE596", "#C7FBC4", "#B7ECFF"];
+  const colors = ["#3182f6", "#64a8ff", "#64a8ff", "#e8f3ff"];
   const goalUl = document.querySelector(".goal-ul");
   const neoImg = document.querySelector(".neo-img");
   let currentIndex = 0;

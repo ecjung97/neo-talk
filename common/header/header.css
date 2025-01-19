@@ -9,7 +9,7 @@
   width: 100%;
   background-color: #fff;
   z-index: 1000;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #4593fc;
 }
 
 .activeGreen_nav_inner {
@@ -24,7 +24,7 @@
 .activeGreen_nav_logo {
   font-size: 28px;
   text-decoration: none;
-  color: #000;
+  color: #194aa6;
   display: flex;
   align-items: center;
 }
@@ -38,7 +38,7 @@
 .activeGreen_nav_item {
   font-size: 16px;
   text-decoration: none;
-  color: #000;
+  color: #194aa6;
   position: relative;
   padding: 10px 20px;
   border-radius: 999px;
@@ -48,10 +48,9 @@
   background-color: #e8f3ff;
 }
 
-
 .activeGreen_nav_item:active {
-  color: #fff;
-  background-color: #000;
+  color: #194aa6;
+  background-color: #e8f3ff;
 }
 
 .activeGreen_nav_right {
@@ -67,6 +66,10 @@
   background: none;
   border: none;
   padding: 0;
+}
+.activeGreen_nav_icon:hover {
+  border-radius: 50%;
+  background-color: #e8f3ff;
 }
 
 .activeGreen_nav_icon.dark_mode_icon,
@@ -124,7 +127,6 @@
 .activeGreen_sidebar.active {
   right: 0;
 }
-
 
 .activeGreen_sidebar_header {
   display: flex;
@@ -202,7 +204,6 @@
   transform: translateX(0);
 }
 
-
 /* 반응형 스타일 */
 @media screen and (max-width: 1024px) {
   .activeGreen_nav_inner {
@@ -238,7 +239,6 @@
 @media screen and (max-width: 768px) {
   .activeGreen_sidebar {
     width: 100%;
-
   }
 
   .activeGreen_sidebar.active {
@@ -267,6 +267,4 @@
   .activeGreen_nav_inner {
     height: 72px;
   }
-
-
 }
