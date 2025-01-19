@@ -33,11 +33,16 @@ body {
 }
 .container {
   width: 100%;
-  height: 100vh;
-  overflow-y: auto;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
 }
+@media (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+}
+
 /* .container:nth-child(1) {
   background-color: green;
 }
@@ -52,7 +57,7 @@ body {
 } */
 section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +227,7 @@ section {
   .mission-container {
     overflow-y: auto;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
   }
   .s2-strong {
@@ -340,7 +345,7 @@ section {
   .goal-container {
     overflow-y: auto;
     width: 100%;
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
   }
   .goal-ul {
@@ -529,11 +534,11 @@ section {
   .work-container {
     overflow-y: auto;
     width: 100%;
-    height: 100vh;
+    height: auto;
   }
   .work-ul {
     overflow-y: auto;
-    height: calc(160 / var(--viewport320) * var(--vwPercent));
+    height: auto;
     & li {
       width: 100%;
       height: calc(160 / var(--viewport320) * var(--vwPercent));
