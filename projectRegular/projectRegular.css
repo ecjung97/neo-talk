@@ -2,12 +2,12 @@
 :root {
   /* 색상 */
   --main-bg: #fff;
-  --tab-bg: #e8f3ff;
+  --tab-bg: #e1efff;
   --tab-font: #4593fc;
   --tab-hover: #1957c2;
   --tab-on: #1957c2;
-  --btn-bg: #64a8ff; /* 카카오 Yellow 일때 */
-  --btn-hover: #e8f3ff; /* 버튼 배경이 흰색일 때 */
+  --btn-bg: #e1efff; /* 카카오 Yellow 일때 */
+  --btn-hover: #1957c2; /* 버튼 배경이 흰색일 때 */
   --tile-bg: #4593fc; /*배경이 노랑색일 때 */
 }
 
@@ -130,7 +130,7 @@ strong {
   color: var(--tab-hover);
 }
 
-.tabs-wrap .tab-list li.on .tab-link {
+.tabs-wrap .tab-list li .tab-link.on {
   background-color: var(--tab-on);
   color: #fff;
 }
@@ -155,7 +155,6 @@ svg {
 
 /* main */
 .common_content {
-  margin-top: 91px;
   padding-bottom: 182px;
 }
 
@@ -256,8 +255,7 @@ svg {
 }
 
 .project-area .project-group .project-box:not(:first-child) {
-  visibility: hidden;
-  transform: translateY(100%);
+  display: none;
 }
 
 .project-area .project-group .project-box .inner-box {
@@ -670,7 +668,12 @@ svg {
 }
 
 .news-area .news-card-list li {
+  display: none;
   overflow: hidden;
+}
+
+.news-area .news-card-list li.show {
+  display: block;
 }
 
 .news-area .news-card-list li .item-normal-card {
@@ -818,7 +821,6 @@ svg {
 }
 
 .news-area .news-card-list li .item-normal-card .layer-share {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -891,12 +893,17 @@ svg {
   width: 260px;
   margin: 60px auto 0;
   padding: 16.5px 0;
-  background-color: #f3f3f3;
+  background-color: var(--btn-bg);
   border-radius: 999px;
   font-size: 17px;
   line-height: 27px;
   letter-spacing: -0.5px;
   color: #000;
+}
+
+.news-area .btn-more:hover {
+  background-color: var(--btn-hover);
+  color: #fff;
 }
 
 .news-area .btn-more.hide {
@@ -945,11 +952,6 @@ svg {
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.2px;
-  }
-
-  /* main */
-  .common_content {
-    margin-top: 84px;
   }
 
   /* title */
@@ -1367,7 +1369,6 @@ svg {
 
   /* main */
   .common_content {
-    margin-top: 72px;
     padding-bottom: 172px;
   }
 
@@ -1583,7 +1584,6 @@ svg {
   .common_content {
     padding-left: 14px;
     padding-right: 14px;
-    margin-top: 0;
   }
 
   .br-mo,
@@ -1907,10 +1907,6 @@ svg {
 
 /* 411px */
 @media screen and (max-width: 411px) {
-  .common_content {
-    margin-top: 0;
-  }
-
   /* edu area */
   .edu-area .edu-list {
     margin-top: 32px;

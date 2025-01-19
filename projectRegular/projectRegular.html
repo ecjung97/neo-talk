@@ -36,7 +36,7 @@
                 <source src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/projectDangol/dc586b21019300001.mp4" type="video/mp4" />
               </video>
               <button type="button" class="btn-mute">
-                <span aria-label="음소거 해제" class="txt-video"> OFF </span>
+                <span aria-label="음소거" class="txt-video"> OFF </span>
               </button>
             </div>
           </section>
@@ -50,9 +50,9 @@
             </h4>
             <div class="tabs-wrap">
               <ul class="tab-list">
-                <li class="on"><a href="#" id="tab-project1" class="tab-link">단골시장</a></li>
-                <li><a href="#" id="tab-project2" class="tab-link">단골거리</a></li>
-                <li><a href="#" id="tab-project3" class="tab-link">단골 만들기 지원센터</a></li>
+                <li><a href="#" id="tab-project1" class="tab-link on" data-tab="project1">단골시장</a></li>
+                <li><a href="#" id="tab-project2" class="tab-link" data-tab="project2">단골거리</a></li>
+                <li><a href="#" id="tab-project3" class="tab-link" data-tab="project3">단골 만들기 지원센터</a></li>
               </ul>
             </div>
             <div class="project-group">
@@ -254,9 +254,9 @@
             </h4>
             <div class="tabs-wrap">
               <ul class="tab-list">
-                <li><a href="#" id="tab-help1" class="tab-link">찾아가는 교육</a></li>
-                <li><a href="#" id="tab-help2" class="tab-link">채널 활성화 지원금</a></li>
-                <li><a href="#" id="tab-help3" class="tab-link">오프라인 홍보 키트</a></li>
+                <li><a href="#" id="tab-help1" class="tab-link on" data-tab="help1">찾아가는 교육</a></li>
+                <li><a href="#" id="tab-help2" class="tab-link" data-tab="help2">채널 활성화 지원금</a></li>
+                <li><a href="#" id="tab-help3" class="tab-link" data-tab="help3">오프라인 홍보 키트</a></li>
               </ul>
             </div>
             <div class="help-box help1">
@@ -495,7 +495,7 @@
                     </button>
                     <ul data-v-ff66b69e="" class="layer-list">
                       <li data-v-ff66b69e="">
-                        <button data-v-ff66b69e="" type="button" aria-label="카카오톡으로 공유하기, 새창열림" data-url="https://www.kakaocorp.com/page/detail/11370?lang=KOR" class="btn-layer">
+                        <button data-v-ff66b69e="" type="button" aria-label="카카오톡으로 공유하기, 새창열림" class="btn-layer">
                           <svg data-v-1cfdfad4="" data-v-ff66b69e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="ico-share-kakao">
                             <g data-v-1cfdfad4="" fill="none" fill-rule="evenodd">
                               <g data-v-1cfdfad4="" transform="translate(-639 -362) translate(639 362)">
@@ -515,7 +515,7 @@
                         </button>
                       </li>
                       <li data-v-ff66b69e="">
-                        <button data-v-ff66b69e="" type="button" aria-label="페이스북으로 공유하기, 새창열림" data-url="https://www.kakaocorp.com/page/detail/11370?lang=KOR" class="btn-layer">
+                        <button data-v-ff66b69e="" type="button" aria-label="페이스북으로 공유하기, 새창열림" class="btn-layer">
                           <svg data-v-72efc4ae="" data-v-ff66b69e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="ico-share-facebook">
                             <g data-v-72efc4ae="" fill="none" fill-rule="evenodd">
                               <g data-v-72efc4ae="" transform="translate(-681 -362) translate(681 362)">
@@ -556,7 +556,7 @@
                         </button>
                       </li>
                       <li data-v-ff66b69e="">
-                        <button data-v-ff66b69e="" type="button" aria-label="링크 복사하기" data-url="https://www.kakaocorp.com/page/detail/11370?lang=KOR" class="btn-layer">
+                        <button data-v-ff66b69e="" type="button" aria-label="링크 복사하기" class="btn-layer">
                           <svg data-v-0317007f="" data-v-ff66b69e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="ico-share-link">
                             <g data-v-0317007f="" fill="none" fill-rule="evenodd">
                               <g data-v-0317007f="" transform="translate(-765 -362) translate(765 362)">
@@ -639,7 +639,7 @@
                     </button>
                     <ul data-v-ff66b69e="" class="layer-list">
                       <li data-v-ff66b69e="">
-                        <button data-v-ff66b69e="" type="button" aria-label="카카오톡으로 공유하기, 새창열림" data-url="https://www.kakaocorp.com/page/detail/11370?lang=KOR" class="btn-layer">
+                        <button data-v-ff66b69e="" type="button" aria-label="카카오톡으로 공유하기, 새창열림" class="btn-layer">
                           <svg data-v-1cfdfad4="" data-v-ff66b69e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="ico-share-kakao">
                             <g data-v-1cfdfad4="" fill="none" fill-rule="evenodd">
                               <g data-v-1cfdfad4="" transform="translate(-639 -362) translate(639 362)">
@@ -659,7 +659,7 @@
                         </button>
                       </li>
                       <li data-v-ff66b69e="">
-                        <button data-v-ff66b69e="" type="button" aria-label="페이스북으로 공유하기, 새창열림" data-url="https://www.kakaocorp.com/page/detail/11370?lang=KOR" class="btn-layer">
+                        <button data-v-ff66b69e="" type="button" aria-label="페이스북으로 공유하기, 새창열림" class="btn-layer">
                           <svg data-v-72efc4ae="" data-v-ff66b69e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="ico-share-facebook">
                             <g data-v-72efc4ae="" fill="none" fill-rule="evenodd">
                               <g data-v-72efc4ae="" transform="translate(-681 -362) translate(681 362)">
@@ -1757,10 +1757,14 @@
       </div>
       <footer include-html="../common/footer/footer.html"></footer>
     </div>
+    <script src="./js/projectRegular.js"></script>
+    <script src="../common/header/js/temp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
   </body>
-
   <script>
     includeHTML()
   </script>
-  <script src="./js/projectRegular.js"></script>
 </html>
