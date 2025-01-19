@@ -1,6 +1,6 @@
 .service_wrap {
     max-width: 90%;
-    margin: 50px auto 0;
+    margin: 50px auto 90px;
 }
 
 /* 상단 영역 */
@@ -187,13 +187,15 @@
     .service_content {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .service_wrap {
+        margin: 30px auto 70px;
+    }
 }
 
 /* 태블릿 (768px 이하) */
 @media screen and (max-width: 768px) {
-    .service_wrap {
-        margin: 30px auto 0;
-    }
+
 
     .service_title {
         font-size: 36px;
@@ -233,7 +235,7 @@
 /* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
     .service_wrap {
-        margin: 10px auto 0;
+        margin: 10px auto 50px;
     }
 
     .service_title {
