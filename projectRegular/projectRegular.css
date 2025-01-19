@@ -821,6 +821,7 @@ svg {
 }
 
 .news-area .news-card-list li .item-normal-card .layer-share {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
