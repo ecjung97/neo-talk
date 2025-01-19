@@ -1,17 +1,18 @@
 .common_content {
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
   padding-bottom: 200px;
 }
 
 .banner {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  min-width: 1200px;
-  color: var(--main-bg);
+  max-width: 100vw;
+  height: 500px;
+  margin-bottom: 30px;
+  z-index: 2;
 }
+
 .banner:before {
   text-align: right;
   position: absolute;
@@ -21,37 +22,191 @@
   width: 720px;
   height: 160px;
 }
+
 .banner-list {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  min-width: 1200px;
-  animation: startMv 2.1s;
-  animation-timing-function: ease-in-out;
-  transition: all 0.3s;
-  /* transform: translate(-50%, -50%);
+  position: relative;
+  width: 100%;
+  height: 500px;
+  transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%; */
-}
-.banner .title-continer {
-  position: absolute;
-  z-index: 10;
-  opacity: 1;
-  bottom: calc(50% - 250px);
-  left: 142px;
+  left: 50%;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
-.banner .main-title {
-  font-size: 140px;
-  white-space: nowrap;
-  text-align: left;
+.banner-list li {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade 10s linear infinite;
+  /* opacity: 0; */
+}
+
+/* .banner  .banner-list li .mvImg {
+  position: relative;
+    overflow: hidden;
+  min-height: 500px;
+  transition: all .3s; */
+/* } */
+.mvImg {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  transition: all 0.3s;
+}
+.banner-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  object-position: center center !important;
+  /* opacity: 0;
+  transition-delay: 500ms; */
+}
+
+.banner .banner-list li .mvImg :before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+  top: 50%;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+#mainTitleArea {
+  position: absolute;
+  width: 100%;
+  top: 226px;
+  padding: 0 20px;
+  opacity: 0;
+  transition: all 0.2s;
+  transition-delay: 0s;
+}
+.banner.resize #mainTitleArea {
+  opacity: 1;
+  transition-delay: .1s;
+  z-index: 10;
+}
+
+.banner.resize #mainTitleArea h2 {
+  /* transition: all .6s; */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 70px;
+}
+
+#mainTitleArea .subTxt {
+  white-space: pre-wrap;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 8px;
+
+  line-height: 1.6;
+  margin-top: 8px;
+  color: #616161;
+}
+
+.banner.resize .banner-list {
+  width: 1200px;
+  height: 360px;
+  min-width: unset;
+}
+
+.banner .title-continer {
+position: absolute;
+    z-index: 10;
+    bottom: 78px;
+    left: 17px;
+    opacity: 1;
+    transition: all .2s;
+    color: #fff;
+    text-align: left;
+}
+
+.banner .title-continer .main-title {
+  font-size: 50px;
+  
 }
 
 .banner .sub-title {
-  font-size: 40px;
-  text-indent: 8px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-indent: 2px;
 }
+
+
+@media only screen and (min-width: 879px) {
+  .banner {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1200px;
+  }
+
+  .banner-list li .mvImg img {
+    -o-object-position: center center !important;
+    object-position: center center !important;
+  }
+  .banner-list li .mvImg {
+    min-height: 100vh;
+
+    /* animation: startMvImg 2.1s;
+    animation-timing-function: ease-in-out; */
+  }
+
+  .banner-list li {
+    will-change: transform;
+    height: 100vh;
+    top: 0;
+  }
+  .banner .title-continer {
+    bottom: calc(50% - 250px);
+    left: 142px;
+    color: #fff;
+    animation: startTxtArea 2.1s;
+  }
+  .banner .title-continer .main-title {
+    font-size: 140px;
+    white-space: nowrap;
+  }
+
+  .banner .sub-title {
+    font-size: 40px;
+    text-indent: 8px;
+    margin-bottom: 20px;
+  }
+  .banner-img {
+    object-position: center center !important;
+  }
+
+  .banner-list {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1200px;
+    animation: startMv 2.1s;
+    animation-timing-function: ease-in-out;
+    transition: all 0.3s;
+  }
+  #mainTitleArea {
+    width: 100%;
+    min-width: 1200px;
+    top: calc(50vh + 240px);
+    padding: 0;
+    z-index: 1;
+}
+
+}
+
 
 .download-list {
   display: flex;
@@ -81,7 +236,7 @@
   margin: 32px 0 0 8px;
 }
 .download-title {
-  font: 26px;
+  font: 30px;
   font-weight: 500;
 }
 
@@ -94,12 +249,11 @@
   transform: translateX(-50%);
   opacity: 1; /* 요소를 보이게 설정 */
   visibility: visible;
-  z-index: 999; 
+  z-index: 999;
   animation: startTxtArea 2.1s;
-
 }
 
-#mvArea:before {
+/* .banner:before {
   text-align: right;
   position: absolute;
   left: calc(50% - 360px);
@@ -107,8 +261,7 @@
   opacity: 0;
   width: 720px;
   height: 160px;
-}
-
+} */
 
 .scrollNavWrap .scrollNav {
   position: absolute;
@@ -116,7 +269,6 @@
   color: #fff;
   font-size: 11px;
   animation: equallyBound 1.4s ease infinite;
-  
 }
 .scrollNavWrap .scrollNav:after {
   content: "";
@@ -127,7 +279,7 @@
   background-color: #fff !important;
   left: 14px;
   bottom: -120px;
-  animation: lineMove .9s ease-in-out infinite;
+  animation: lineMove 0.9s ease-in-out infinite;
 }
 @keyframes lineMove {
   0% {
@@ -250,7 +402,7 @@
   margin-right: 8px;
 }
 
-.wrap_thumb {
+.wrap-thumb {
   position: relative;
   /* border-radius: 12px; 
   display: flex; 
@@ -362,7 +514,7 @@
   line-height: 1.4;
 }
 
-.news-main-container .wrap_thumb {
+.news-main-container .wrap-thumb {
   height: 314px;
 }
 
@@ -637,7 +789,7 @@ a {
   background-image: url(//t1.kakaocdn.net/kakaocorp/kakaocorp/service/main/icon_li.png);
 }
 
-.recruit .wrap_thumb {
+.recruit .wrap-thumb {
   position: relative;
   /* border-radius: 12px; 
   display: flex; 
