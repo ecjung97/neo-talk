@@ -11,12 +11,140 @@
     <link rel="stylesheet" href="./randing/randing.css" />
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./common/header/header.css">
+    <link rel="stylesheet" href="./common/footer/footer.css">
   
   </head>
 
   <body>
     <div class="common_flex">
-      <header include-html="./common/header/header.html"></header>
+      <header class="header">
+        <nav class="activeGreen_nav">
+            <div class="activeGreen_nav_inner">
+                <a href="/index.html" class="activeGreen_nav_logo">Neo</a>
+
+                <div class="activeGreen_nav_menu">
+                    <div class="activeGreen_nav_menu">
+                        <a href="../../culture/culture.html" class="activeGreen_nav_item">네오의 문화</a>
+                        <a href="../../service/service.html" class="activeGreen_nav_item">서비스</a>
+                        <a href="../../projectRegular/projectRegular.html" class="activeGreen_nav_item">프로젝트 단골</a>
+                        <a href="../../activeGreen/activeGreen.html" class="activeGreen_nav_item">액티브 그린</a>
+                    </div>
+
+                </div>
+
+                <div class="activeGreen_nav_right">
+                    <!-- 검색 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon search_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M21 21L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 지구본 아이콘 -->
+                    <button type="button" id="translateBtn" class="activeGreen_nav_icon globe_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
+                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <!-- 달 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon dark_mode_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
+                    <button type="button" id="hamburgerBtn" class="activeGreen_nav_icon hamburger_icon" id="
+                        hamburgerBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- 반응형 사이드바 -->
+        <div id="activeGreen_sidebar" class="activeGreen_sidebar">
+            <div class="activeGreen_sidebar_inner">
+                <div class="activeGreen_top_icons">
+                    <!-- 달 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 지구본 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
+                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <!-- 닫기 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon activeGreen_sidebar_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="activeGreen_sidebar_menu">
+                    <a href="../../culture/culture.html" class="activeGreen_sidebar_item">
+                        <span>네오의 문화</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="activeGreen_sidebar_item">
+                        <span>서비스</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="../../projectRegular/projectRegular.html" class="activeGreen_sidebar_item">
+                        <span>프로젝트 단골</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="../../activeGreen/activeGreen.html" class="activeGreen_sidebar_item">
+                        <span>액티브 그린</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 사이드바 오버레이 -->
+        <div id="sidebar_overlay" class="activeGreen_sidebar_overlay"></div>
+
+    </header>
       <div class="common_content">        
         <div class="banner">
             <div class="title-continer">
@@ -29,16 +157,14 @@
 
                     <ul class="download-list onlyPc">
                         <li>
-                        <a href="https://itunes.apple.com/kr/app/line/id443904275" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"></a>
 
                             </li>
                             <li>
-                                <a href="https://itunes.apple.com/kr/app/line/id443904275" target="_blank" rel="noopener noreferrer"></a>
-
-                                    
+                                <a href="#" target="_blank" rel="noopener noreferrer"></a>                                
                                     </li>
                                     <li>
-                                    <a href="https://itunes.apple.com/kr/app/line/id443904275" target="_blank" rel="noopener noreferrer"></a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer"></a>
 
                                             
                                             </li>
@@ -48,13 +174,24 @@
           
         </div>
            <ul class="banner-list">
-                <li style="width: 100%; height: 100%; ">
-                  <img aria-hidden="true" src="./randing/assets/mv02.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
-                </li>
+            <li>
+            <div class="mvImg gatsby-image-wrapper">
+
+            
+             
+                  <img class="banner-img" aria-hidden="true" src="./randing/assets/mv02.jpg" alt="" 
+                  >
+                
+              </div>
+            </li>
               </ul>
            
               <div class="scrollNavWrap onlyPc"><span class="scrollNav">Scroll</span></div>
-         
+              <div id="mainTitleArea">
+                <h2 class="fontL">Life on LINE</h2>
+                <p class="subTxt">메신저 앱 그 이상의 경험을 제공합니다.
+                라인은 새로운 인프라 경험, 새로운 커뮤니케이션 경험을 모두에게 전달하고자 합니다.</p>
+              </div>
         
     </div>
         <!-- 캐러셀 -->
@@ -66,7 +203,7 @@
                   <span>네오와 축적해 온 이야기들</span>
                 </div>
                 
-                    <button class="carousel-control">=</button>
+                <button class="carousel-control">슬라이드 시작</button>
                 
               </h3>
             </div>
@@ -79,7 +216,7 @@
   
                   
                   <a class="link-card">
-                    <div class="wrap_thumb">
+                    <div class="wrap-thumb">
                         <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                       </div>
                       <div class="wrap-text">
@@ -109,11 +246,67 @@
                   />
               </div>
               </div>
-              <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
+              <div class="item-title">
+                <strong>접근성<br>어디까지 고민해봤나요?</strong>
+              </div>
 
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
+ <p class="desc_card">
+                    마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                  </p> 
+                  <p class="info-bottom-info">
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
                   </p>
+
+              
+                </div>
+           
+            </a>
+  
+              </li>
+               <li class="item-container"> 
+  
+  
+                  
+                  <a class="link-card">
+                    <div class="wrap-thumb">
+                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
+                      </div>
+                      <div class="wrap-text">
+
+             
+                <div class="info-cate">
+                  <div class="info-left">
+                  <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+                  <span> 서비스</span>
+                  </div>
+      <div class="info-right">
+  
+      <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+              </div>
+              </div>
+              <div class="item-title">
+                <strong>접근성<br>어디까지 고민해봤나요?</strong>
+              </div>
+
+ <p class="desc_card">
+                    마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                  </p> 
                   <p class="info-bottom-info">
                     <span class="info-tag">#소상공인지원</span>
                     <span class="info-tag">#소상공인지원</span>
@@ -131,7 +324,7 @@
   
                   
                 <a class="link-card">
-                  <div class="wrap_thumb">
+                  <div class="wrap-thumb">
                       <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                     </div>
                     <div class="wrap-text">
@@ -161,10 +354,13 @@
                 />
             </div>
             </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
+            <div class="item-title">
+              <strong>접근성<br>어디까지 고민해봤나요?</strong>
+            </div>
+
+<p class="desc_card">
+                  마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                </p> 
                 <p class="info-bottom-info">
                   <span class="info-tag">#소상공인지원</span>
                   <span class="info-tag">#소상공인지원</span>
@@ -181,632 +377,397 @@
   
   
                   
-                <a class="link-card">
-                  <div class="wrap_thumb">
-                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                    </div>
-                    <div class="wrap-text">
+              <a class="link-card">
+                <div class="wrap-thumb">
+                    <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
+                  </div>
+                  <div class="wrap-text">
 
-           
-              <div class="info-cate">
-                <div class="info-left">
-                <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-                <span> 서비스</span>
-                </div>
-    <div class="info-right">
-
-    <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-            </div>
-            </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
-                <p class="info-bottom-info">Í
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                </p>
-
-            
-              </div>
          
-          </a>
+            <div class="info-cate">
+              <div class="info-left">
+              <img
+                data-v-2d99603c=""
+                data-v-4eab7ab4=""
+                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                alt=""
+                tabindex="-1"
+                class="ico_cate"
+              />
+              <span> 서비스</span>
+              </div>
+  <div class="info-right">
 
-            </li>
-            <li class="item-container"> 
+  <img
+                data-v-2d99603c=""
+                data-v-4eab7ab4=""
+                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                alt=""
+                tabindex="-1"
+                class="ico_cate"
+              />
+          </div>
+          </div>
+          <div class="item-title">
+            <strong>접근성<br>어디까지 고민해봤나요?</strong>
+          </div>
+
+<p class="desc_card">
+                마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+              </p> 
+              <p class="info-bottom-info">
+                <span class="info-tag">#소상공인지원</span>
+                <span class="info-tag">#소상공인지원</span>
+                <span class="info-tag">#소상공인지원</span>
+              </p>
+
+          
+            </div>
+       
+        </a>
+
+          </li>
+          <li class="item-container"> 
   
   
                   
-                <a class="link-card">
-                  <div class="wrap_thumb">
-                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                    </div>
-                    <div class="wrap-text">
-
-           
-              <div class="info-cate">
-                <div class="info-left">
-                <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-                <span> 서비스</span>
+            <a class="link-card">
+              <div class="wrap-thumb">
+                  <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                 </div>
-    <div class="info-right">
+                <div class="wrap-text">
 
-    <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
+       
+          <div class="info-cate">
+            <div class="info-left">
+            <img
+              data-v-2d99603c=""
+              data-v-4eab7ab4=""
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+              alt=""
+              tabindex="-1"
+              class="ico_cate"
+            />
+            <span> 서비스</span>
             </div>
-            </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
-                <p class="info-bottom-info">
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                </p>
+<div class="info-right">
 
-            
-              </div>
-         
-          </a>
+<img
+              data-v-2d99603c=""
+              data-v-4eab7ab4=""
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+              alt=""
+              tabindex="-1"
+              class="ico_cate"
+            />
+        </div>
+        </div>
+        <div class="item-title">
+          <strong>접근성<br>어디까지 고민해봤나요?</strong>
+        </div>
 
-            </li>
-            <li class="item-container"> 
-  
-  
-                  
-                <a class="link-card">
-                  <div class="wrap_thumb">
-                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                    </div>
-                    <div class="wrap-text">
+<p class="desc_card">
+              마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+            </p> 
+            <p class="info-bottom-info">
+              <span class="info-tag">#소상공인지원</span>
+              <span class="info-tag">#소상공인지원</span>
+              <span class="info-tag">#소상공인지원</span>
+            </p>
 
-           
-              <div class="info-cate">
-                <div class="info-left">
-                <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-                <span> 서비스</span>
-                </div>
-    <div class="info-right">
+        
+          </div>
+     
+      </a>
 
-    <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-            </div>
-            </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
-                <p class="info-bottom-info">
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                </p>
-
-            
-              </div>
-         
-          </a>
-
-            </li>
-            <li class="item-container"> 
-  
-  
-                  
-                <a class="link-card">
-                  <div class="wrap_thumb">
-                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                    </div>
-                    <div class="wrap-text">
-
-           
-              <div class="info-cate">
-                <div class="info-left">
-                <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-                <span> 서비스</span>
-                </div>
-    <div class="info-right">
-
-    <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-            </div>
-            </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
-                <p class="info-bottom-info">
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                </p>
-
-            
-              </div>
-         
-          </a>
-
-            </li>
-            <li class="item-container"> 
-  
-  
-                  
-                <a class="link-card">
-                  <div class="wrap_thumb">
-                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                    </div>
-                    <div class="wrap-text">
-
-           
-              <div class="info-cate">
-                <div class="info-left">
-                <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-                <span> 서비스</span>
-                </div>
-    <div class="info-right">
-
-    <img
-                  data-v-2d99603c=""
-                  data-v-4eab7ab4=""
-                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                  alt=""
-                  tabindex="-1"
-                  class="ico_cate"
-                />
-            </div>
-            </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                <p class="desc_card">
-                  <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                </p>
-                <p class="info-bottom-info">
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                  <span class="info-tag">#소상공인지원</span>
-                </p>
-
-            
-              </div>
-         
-          </a>
-
-            </li>
+        </li>
             </ul> 
-            <ul class="list-story"  id="storyList">
+              <ul class="list-story"  id="storyList">
                 
-                <li class="item-container"> 
-    
-    
-                    
-                    <a class="link-card">
-                      <div class="wrap_thumb">
-                          <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                        </div>
-                        <div class="wrap-text">
+              <li class="item-container"> 
   
-               
-                  <div class="info-cate">
-                    <div class="info-left">
-                    <img
-                      data-v-2d99603c=""
-                      data-v-4eab7ab4=""
-                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                      alt=""
-                      tabindex="-1"
-                      class="ico_cate"
-                    />
-                    <span> 서비스</span>
+  
+                  
+                  <a class="link-card">
+                    <div class="wrap-thumb">
+                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
+                      </div>
+                      <div class="wrap-text">
+
+             
+                <div class="info-cate">
+                  <div class="info-left">
+                  <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+                  <span> 서비스</span>
+                  </div>
+      <div class="info-right">
+  
+      <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+              </div>
+              </div>
+              <div class="item-title">
+                <strong>접근성<br>어디까지 고민해봤나요?</strong>
+              </div>
+
+ <p class="desc_card">
+                    마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                  </p> 
+                  <p class="info-bottom-info">
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
+                  </p>
+
+              
+                </div>
+           
+            </a>
+  
+              </li>
+               <li class="item-container"> 
+  
+  
+                  
+                  <a class="link-card">
+                    <div class="wrap-thumb">
+                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
+                      </div>
+                      <div class="wrap-text">
+
+             
+                <div class="info-cate">
+                  <div class="info-left">
+                  <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+                  <span> 서비스</span>
+                  </div>
+      <div class="info-right">
+  
+      <img
+                    data-v-2d99603c=""
+                    data-v-4eab7ab4=""
+                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                    alt=""
+                    tabindex="-1"
+                    class="ico_cate"
+                  />
+              </div>
+              </div>
+              <div class="item-title">
+                <strong>접근성<br>어디까지 고민해봤나요?</strong>
+              </div>
+
+ <p class="desc_card">
+                    마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                  </p> 
+                  <p class="info-bottom-info">
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
+                    <span class="info-tag">#소상공인지원</span>
+                  </p>
+
+              
+                </div>
+           
+            </a>
+  
+              </li>
+              <li class="item-container"> 
+  
+  
+                  
+                <a class="link-card">
+                  <div class="wrap-thumb">
+                      <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                     </div>
-        <div class="info-right">
-    
-        <img
-                      data-v-2d99603c=""
-                      data-v-4eab7ab4=""
-                      src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                      alt=""
-                      tabindex="-1"
-                      class="ico_cate"
-                    />
-                </div>
-                </div>
-                <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-  
-                    <p class="desc_card">
-                      <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                    </p>
-                    <p class="info-bottom-info">
-                      <span class="info-tag">#소상공인지원</span>
-                      <span class="info-tag">#소상공인지원</span>
-                      <span class="info-tag">#소상공인지원</span>
-                    </p>
-  
-                
-                  </div>
-             
-              </a>
-    
-                </li>
-                <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
-  
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
-                  </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-              </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
-  
-              
-                </div>
+                    <div class="wrap-text">
+
            
-            </a>
-  
-              </li>
-              <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
-  
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
-                  </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-              </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">Í
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
-  
-              
+              <div class="info-cate">
+                <div class="info-left">
+                <img
+                  data-v-2d99603c=""
+                  data-v-4eab7ab4=""
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                  alt=""
+                  tabindex="-1"
+                  class="ico_cate"
+                />
+                <span> 서비스</span>
                 </div>
-           
-            </a>
+    <div class="info-right">
+
+    <img
+                  data-v-2d99603c=""
+                  data-v-4eab7ab4=""
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                  alt=""
+                  tabindex="-1"
+                  class="ico_cate"
+                />
+            </div>
+            </div>
+            <div class="item-title">
+              <strong>접근성<br>어디까지 고민해봤나요?</strong>
+            </div>
+
+<p class="desc_card">
+                  마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+                </p> 
+                <p class="info-bottom-info">
+                  <span class="info-tag">#소상공인지원</span>
+                  <span class="info-tag">#소상공인지원</span>
+                  <span class="info-tag">#소상공인지원</span>
+                </p>
+
+            
+              </div>
+         
+          </a>
+
+            </li>
+            <li class="item-container"> 
   
-              </li>
-              <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
   
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
+                  
+              <a class="link-card">
+                <div class="wrap-thumb">
+                    <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                   </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
+                  <div class="wrap-text">
+
+         
+            <div class="info-cate">
+              <div class="info-left">
+              <img
+                data-v-2d99603c=""
+                data-v-4eab7ab4=""
+                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                alt=""
+                tabindex="-1"
+                class="ico_cate"
+              />
+              <span> 서비스</span>
               </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
+  <div class="info-right">
+
+  <img
+                data-v-2d99603c=""
+                data-v-4eab7ab4=""
+                src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                alt=""
+                tabindex="-1"
+                class="ico_cate"
+              />
+          </div>
+          </div>
+          <div class="item-title">
+            <strong>접근성<br>어디까지 고민해봤나요?</strong>
+          </div>
+
+<p class="desc_card">
+                마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+              </p> 
+              <p class="info-bottom-info">
+                <span class="info-tag">#소상공인지원</span>
+                <span class="info-tag">#소상공인지원</span>
+                <span class="info-tag">#소상공인지원</span>
+              </p>
+
+          
+            </div>
+       
+        </a>
+
+          </li>
+          <li class="item-container"> 
   
-              
+  
+                  
+            <a class="link-card">
+              <div class="wrap-thumb">
+                  <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
                 </div>
-           
-            </a>
-  
-              </li>
-              <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
-  
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
-                  </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-              </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
-  
-              
-                </div>
-           
-            </a>
-  
-              </li>
-              <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
-  
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
-                  </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-              </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
-  
-              
-                </div>
-           
-            </a>
-  
-              </li>
-              <li class="item-container"> 
-    
-    
-                    
-                  <a class="link-card">
-                    <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Farchives%2F85d56931018c00001.jpg" draggable="false" alt="" class="thumb_img">
-                      </div>
-                      <div class="wrap-text">
-  
-             
-                <div class="info-cate">
-                  <div class="info-left">
-                  <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-                  <span> 서비스</span>
-                  </div>
-      <div class="info-right">
-  
-      <img
-                    data-v-2d99603c=""
-                    data-v-4eab7ab4=""
-                    src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                    alt=""
-                    tabindex="-1"
-                    class="ico_cate"
-                  />
-              </div>
-              </div>
-                  <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                  <p class="desc_card">
-                    <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                  </p>
-                  <p class="info-bottom-info">
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                    <span class="info-tag">#소상공인지원</span>
-                  </p>
-  
-              
-                </div>
-           
-            </a>
-  
-              </li>
-              </ul> 
+                <div class="wrap-text">
+
+       
+          <div class="info-cate">
+            <div class="info-left">
+            <img
+              data-v-2d99603c=""
+              data-v-4eab7ab4=""
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+              alt=""
+              tabindex="-1"
+              class="ico_cate"
+            />
+            <span> 서비스</span>
+            </div>
+<div class="info-right">
+
+<img
+              data-v-2d99603c=""
+              data-v-4eab7ab4=""
+              src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+              alt=""
+              tabindex="-1"
+              class="ico_cate"
+            />
+        </div>
+        </div>
+        <div class="item-title">
+          <strong>접근성<br>어디까지 고민해봤나요?</strong>
+        </div>
+
+<p class="desc_card">
+              마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결
+            </p> 
+            <p class="info-bottom-info">
+              <span class="info-tag">#소상공인지원</span>
+              <span class="info-tag">#소상공인지원</span>
+              <span class="info-tag">#소상공인지원</span>
+            </p>
+
+        
+          </div>
+     
+      </a>
+
+        </li>
+            </ul> 
                
             <!-- </div> -->
               
           </section>
         </section>
         
-        <!-- 카카오 서비스 -->
+        <!-- 네오 서비스 -->
         <section class="main-container">
             <div class="title-container">
                 <h3 class="content-title">
                     <div>
                         <span class="carousel-icon">!</span>
-                        <span>   더 나은 세상을 만드는 카카오 서비스</span>
+                        <span>   더 나은 세상을 만드는 네오 서비스</span>
                       </div>
                     
                 </h3>
@@ -838,7 +799,8 @@
                 <div class="wrap_btn">
                     <button class="btn-navigation"> 
                         <a class="btn-link">
-                        서비스 전체보기<svg data-v-be739f74=""  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn_arr"><circle data-v-be739f74="" cx="12" cy="12" r="12" fill="black"></Scircle> <path data-v-be739f74="" d="M13.9704 8.57847L13.2078 9.34107L15.7207 11.8539L7.53764 11.8543L7.53765 12.9296L15.7207 12.9292L13.2079 15.442L13.9705 16.2046L17.7836 12.3916L13.9704 8.57847Z" fill="white"></path></svg></a></button>
+                        서비스 전체보기
+                        <svg data-v-be739f74=""  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn_arr"><circle data-v-be739f74="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-be739f74="" d="M13.9704 8.57847L13.2078 9.34107L15.7207 11.8539L7.53764 11.8543L7.53765 12.9296L15.7207 12.9292L13.2079 15.442L13.9705 16.2046L17.7836 12.3916L13.9704 8.57847Z" fill="white"></path></svg></a></button>
                 </div>
             </div>
         
@@ -847,7 +809,55 @@
          
         <section class="main-container news-main-container">
             <ul class="list-story">
-                    <li class="item-container news-item">
+              <li class="item-container news-item news-item-1">
+
+                <a class="link-card">
+                 
+                    <div class="wrap-text">
+
+           
+              <div class="info-cate">
+                <div class="info-left">
+                <img
+                  data-v-2d99603c=""
+                  data-v-4eab7ab4=""
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ee6415a019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                  alt=""
+                  tabindex="-1"
+                  class="ico_cate"
+                />
+                <span> 서비스</span> <span>2025.01.12</span>
+                </div>
+    <div class="info-right">
+
+    <!-- <img
+                  data-v-2d99603c=""
+                  data-v-4eab7ab4=""
+                  src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                  alt=""
+                  tabindex="-1"
+                  class="ico_cate"
+                /> -->
+            </div>
+            </div>
+                <div class="item-title"><strong>네오,<br>설 명절 맞아 풍성한 쇼핑 혜택 제공</strong></div>
+             
+                <p class="info-bottom-info">
+                  <span class="info-tag">#소상공인지원</span>
+                  <span class="info-tag">#소상공인지원</span>
+                  <span class="info-tag">#소상공인지원</span>
+                </p>
+
+            
+              </div>
+              <div class="wrap-thumb">
+                <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6ca5df15019400001.jpg" draggable="false" alt="" class="thumb_img">
+      
+              </div>
+          </a>
+
+            </li>
+                    <li class="item-container news-item news-item-3">
 
                         <a class="link-card">
                          
@@ -859,29 +869,27 @@
                         <img
                           data-v-2d99603c=""
                           data-v-4eab7ab4=""
-                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ee6415a019300001.png?type=thumb&amp;opt=C72x72.fwebp"
                           alt=""
                           tabindex="-1"
                           class="ico_cate"
                         />
-                        <span> 서비스</span> <span>2025.01.12</span>
+                        <span> 서비스</span> <span>2025.01.15</span>
                         </div>
             <div class="info-right">
         
-            <img
+            <!-- <img
                           data-v-2d99603c=""
                           data-v-4eab7ab4=""
                           src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
                           alt=""
                           tabindex="-1"
                           class="ico_cate"
-                        />
+                        /> -->
                     </div>
                     </div>
-                        <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                        <p class="desc_card">
-                          <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                        </p>
+                    <div class="item-title"><strong>카카오 준법과신뢰위원회,<br> 2025년 운영계획 수립…카카오, <br> ‘3대 의제’ 권고 이행 완료</strong></div>
+                     
                         <p class="info-bottom-info">
                           <span class="info-tag">#소상공인지원</span>
                           <span class="info-tag">#소상공인지원</span>
@@ -890,113 +898,62 @@
       
                     
                       </div>
-                      <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6ca5df15019400001.jpg" draggable="false" alt="" class="thumb_img">
+                      <div class="wrap-thumb">
+                        <img data-v-4eab7ab4="" src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6797efff019400001.jpg" draggable="false" alt="" class="thumb_img">
               
                       </div>
                   </a>
         
                     </li>
-                    <li class="item-container news-item">
+                    <li class="item-container news-item news-item-2">
 
-                        <a class="link-card">
-                         
-                            <div class="wrap-text">
+                      <a class="link-card">
+                       
+                          <div class="wrap-text">
+    
+                 
+                    <div class="info-cate">
+                      <div class="info-left">
+                      <img
+                        data-v-2d99603c=""
+                        data-v-4eab7ab4=""
+                           src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ee6415a019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                        alt=""
+                        tabindex="-1"
+                        class="ico_cate"
+                      />
+                      <span> 서비스</span> <span>2025.01.19</span>
+                      </div>
+          <div class="info-right">
       
+          <!-- <img
+                        data-v-2d99603c=""
+                        data-v-4eab7ab4=""
+                        src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
+                        alt=""
+                        tabindex="-1"
+                        class="ico_cate"
+                      /> -->
+                  </div>
+                  </div>
+                      <div class="item-title"><strong>카카오 브런치스토리,<br>
+                        분야별 전문 창작자 지원 위한 <br>'브런치 작가 멤버십' 신규 도입</strong></div>
                    
-                      <div class="info-cate">
-                        <div class="info-left">
-                        <img
-                          data-v-2d99603c=""
-                          data-v-4eab7ab4=""
-                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                          alt=""
-                          tabindex="-1"
-                          class="ico_cate"
-                        />
-                        <span> 서비스</span> <span>2025.01.12</span>
-                        </div>
-            <div class="info-right">
-        
-            <img
-                          data-v-2d99603c=""
-                          data-v-4eab7ab4=""
-                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                          alt=""
-                          tabindex="-1"
-                          class="ico_cate"
-                        />
+                      <p class="info-bottom-info">
+                        <span class="info-tag">#소상공인지원</span>
+                        <span class="info-tag">#소상공인지원</span>
+                        <span class="info-tag">#소상공인지원</span>
+                      </p>
+    
+                  
                     </div>
+                    <div class="wrap-thumb">
+                      <img data-v-4eab7ab4="" src="https://t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F5ea99d61019400001.png" draggable="false" alt="" class="thumb_img">
+            
                     </div>
-                        <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                        <p class="desc_card">
-                          <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                        </p>
-                        <p class="info-bottom-info">
-                          <span class="info-tag">#소상공인지원</span>
-                          <span class="info-tag">#소상공인지원</span>
-                          <span class="info-tag">#소상공인지원</span>
-                        </p>
+                </a>
       
-                    
-                      </div>
-                      <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6ca5df15019400001.jpg" draggable="false" alt="" class="thumb_img">
-              
-                      </div>
-                  </a>
-        
-                    </li>
-                    <li class="item-container news-item">
-
-                        <a class="link-card">
-                         
-                            <div class="wrap-text">
-      
-                   
-                      <div class="info-cate">
-                        <div class="info-left">
-                        <img
-                          data-v-2d99603c=""
-                          data-v-4eab7ab4=""
-                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                          alt=""
-                          tabindex="-1"
-                          class="ico_cate"
-                        />
-                        <span> 서비스</span> <span>2025.01.12</span>
-                        </div>
-            <div class="info-right">
-        
-            <img
-                          data-v-2d99603c=""
-                          data-v-4eab7ab4=""
-                          src="https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/category/1ef5eae0019300001.png?type=thumb&amp;opt=C72x72.fwebp"
-                          alt=""
-                          tabindex="-1"
-                          class="ico_cate"
-                        />
-                    </div>
-                    </div>
-                        <div class="item-title"><strong>접근성<br>어디까지고민헤 봤나요?</strong></div>
-                        <p class="desc_card">
-                          <!-- 마케팅이 어려웠던 사장님이 <br> 매출 500% 올린 비결 -->
-                        </p>
-                        <p class="info-bottom-info">
-                          <span class="info-tag">#소상공인지원</span>
-                          <span class="info-tag">#소상공인지원</span>
-                          <span class="info-tag">#소상공인지원</span>
-                        </p>
-      
-                    
-                      </div>
-                      <div class="wrap_thumb">
-                        <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6ca5df15019400001.jpg" draggable="false" alt="" class="thumb_img">
-              
-                      </div>
-                  </a>
-        
-                    </li>
+                  </li>
                
               </ul>
              
@@ -1012,7 +969,6 @@
                     
                 </h3>
             </div> 
-            <!-- 약속과 책임 -->
             <div class="inner_main">
                 <div class="boxs-container">
                 <article class="box type_esg">
@@ -1037,18 +993,17 @@
               네오를 이용하는 만큼 우리들의 지구도 더 풍요로울 수 있도록
                     </p>
                     <a  href="/page/responsible/esg" role="button" class="btn-container">
-                        <!-- <span  class="screen_out">ESG페이지 바로가기</span>  -->
                         <svg data-v-6984c41e=""  xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="btn_arr_big">
                             <circle data-v-6984c41e="" cx="32" cy="31.9961" r="32" fill="black"></circle> <path data-v-6984c41e="" d="M34.9292 25.5325L33.515 26.9467L38.1748 31.6065L23 31.6074V33.6015L38.1748 33.6005L33.515 38.2604L34.9292 39.6746L42.0002 32.6035L34.9292 25.5325Z" fill="white"></path></svg>
                         </a>
                 </article>
                 <article class="box type_policy">
-                    <span class="title-label"><p class="title-text">ESG</p></span>
+                    <span class="title-label"><p class="title-text">정책매거진</p></span>
                     <img data-v-2d99603c=""  src="//t1.kakaocdn.net/kakaocorp/kakaocorp/service/main/policy.gif" alt="" class="img_responsible">
 
                     <p class="text-content">
                         
-                카카오를 이용하는 만큼 우리들의 지구도 더 풍요로울 수 있도록
+                      기술과 사람이 함께 만드는 건강한 디지털 문화를 고민합니다
               
                     </p>
                     <a  href="/page/responsible/esg" role="button" class="btn-container">
@@ -1077,23 +1032,23 @@
                 <div class="inner_main">
                     <div class="help-boxs-container">
                     <div class="inner-help-box-left">
-                        <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_카카오 고객센터" class="box-help">
+                        <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_네오 고객센터" class="box-help">
                             <div class="box-text-left">
-                                <strong  class="title_help">카카오 고객센터</strong> 
+                                <strong  class="title_help">네오 고객센터</strong> 
 
                             <div  class="sub_help">
                                 바로가기<span><svg data-v-57327a75=""  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="btn_out"><circle data-v-57327a75="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-57327a75="" d="M10.8104 8.57804V9.65654H14.3641L8.57812 15.4432L9.33847 16.2035L15.1244 10.4169V13.9706H16.2029V8.57804H10.8104Z" fill="white"></path></svg></span></div></div>
                       <img data-v-2d99603c=""  src="//t1.kakaocdn.net/thumb/C200x200.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fservice%2Fmain%2Fkakao-cs-white.gif" alt="" class="icon_help">
                     </a>
-                    <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_카카오 고객센터" class="box-help">
-                        <div class="box-text-left"><strong  class="title_help">카카오 고객센터</strong> 
+                    <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_네오 고객센터" class="box-help">
+                        <div class="box-text-left"><strong  class="title_help">네오 고객센터</strong> 
 
                         <div  class="sub_help">
                             바로가기<span><svg data-v-57327a75=""  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="btn_out"><circle data-v-57327a75="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-57327a75="" d="M10.8104 8.57804V9.65654H14.3641L8.57812 15.4432L9.33847 16.2035L15.1244 10.4169V13.9706H16.2029V8.57804H10.8104Z" fill="white"></path></svg></span></div></div>
                   <img data-v-2d99603c=""  src="//t1.kakaocdn.net/thumb/C200x200.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fservice%2Fmain%2Fkakao-cs-white.gif" alt="" class="icon_help">
                 </a>
-                <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_카카오 고객센터" class="box-help">
-                    <div class="box-text-left"><strong  class="title_help">카카오 고객센터</strong> 
+                <a  href="//cs.kakao.com/" target="_blank" rel="noopener" data-tiara-action-name="Click_Main_네오 고객센터" class="box-help">
+                    <div class="box-text-left"><strong  class="title_help">네오 고객센터</strong> 
 
                     <div  class="sub_help">
                         바로가기<span><svg data-v-57327a75=""  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="btn_out"><circle data-v-57327a75="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-57327a75="" d="M10.8104 8.57804V9.65654H14.3641L8.57812 15.4432L9.33847 16.2035L15.1244 10.4169V13.9706H16.2029V8.57804H10.8104Z" fill="white"></path></svg></span></div></div>
@@ -1106,7 +1061,7 @@
                             <div>
                                 <div class="box-text-left">
                                     <p class="title_help">
-                                        <strong>카카오의 다양한 소식을 구독하세요!</strong></p>
+                                        <strong>네오의 다양한 소식을 구독하세요!</strong></p>
                                         <div  class="sub_help">
                                             공식 소셜 미디어 바로가기
                                         </div>
@@ -1116,11 +1071,11 @@
 
                                 <div class="list-social" >
                                     
-                                    <a href="https://pf.kakao.com/_ZRQBh" target="_blank" rel="noopener" role="button" class="link_social link_ch" ></a>
-                                    <a href="https://www.youtube.com/@Kakaobrandmedia" target="_blank" rel="noopener"  role="button" class="link_social link_yt" ></a>
-                                    <a href="https://www.instagram.com/kakao.today" target="_blank" rel="noopener" role="button" class="link_social link_insta"></a>
-                                    <a href="https://www.facebook.com/kakao.brandmedia" target="_blank" rel="noopener" role="button" class="link_social link_fb" ></a>
-                                    <a href="https://www.linkedin.com/company/kakaocorp" target="_blank" rel="noopener" role="button" class="link_social link_li" ></a>
+                                    <a href="#" target="_blank" rel="noopener" role="button" class="link_social link_ch" ></a>
+                                    <a href="#" target="_blank" rel="noopener"  role="button" class="link_social link_yt" ></a>
+                                    <a href="#" target="_blank" rel="noopener" role="button" class="link_social link_insta"></a>
+                                    <a href="#" target="_blank" rel="noopener" role="button" class="link_social link_fb" ></a>
+                                    <a href="#" target="_blank" rel="noopener" role="button" class="link_social link_li" ></a>
                                 </div>
                             </div>
                         
@@ -1139,7 +1094,7 @@
                                   바로가기<span>
                                     <svg data-v-57327a75="" data-v-46520f90="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="btn_out type_inversion"><circle data-v-57327a75="" cx="12" cy="12" r="12" fill="white"></circle> <path data-v-57327a75="" d="M10.8104 8.57804V9.65654H14.3641L8.57812 15.4432L9.33847 16.2035L15.1244 10.4169V13.9706H16.2029V8.57804H10.8104Z" fill="black"></path></svg></span></div></div>
         
-                    <div class="wrap_thumb">
+                    <div class="wrap-thumb">
                         <img data-v-4eab7ab4="" src="//t1.kakaocdn.net/thumb/C630x354.fwebp.q100/?fname=https%3A%2F%2Ft1.kakaocdn.net%2Fkakaocorp%2Fkakaocorp%2Fadmin%2Fnews%2F6ca5df15019400001.jpg" draggable="false" alt="" class="thumb_img">
               
                       </div>
@@ -1155,14 +1110,104 @@
             <div class="wrap_btn">
                 <button class="btn-navigation"> 
                     <a class="btn-link">
-                    카카오 모아보긴<svg data-v-be739f74=""  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn_arr"><circle data-v-be739f74="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-be739f74="" d="M13.9704 8.57847L13.2078 9.34107L15.7207 11.8539L7.53764 11.8543L7.53765 12.9296L15.7207 12.9292L13.2079 15.442L13.9705 16.2046L17.7836 12.3916L13.9704 8.57847Z" fill="white"></path></svg></a></button>
+                    네오 모아보기
+                    <svg data-v-be739f74=""  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn_arr"><circle data-v-be739f74="" cx="12" cy="12" r="12" fill="black"></circle> <path data-v-be739f74="" d="M13.9704 8.57847L13.2078 9.34107L15.7207 11.8539L7.53764 11.8543L7.53765 12.9296L15.7207 12.9292L13.2079 15.442L13.9705 16.2046L17.7836 12.3916L13.9704 8.57847Z" fill="white"></path></svg></a></button>
             </div>
             
             </section>
       </div>
-      <footer include-html="./common/footer/footer.html"></footer>
-    </div>
+      <footer class="activeGreen_footer">
+        <div class="activeGreen_footer_inner">
+            <!-- 푸터 메뉴 -->
+            <div class="activeGreen_footer_menu">
+                <!-- 첫번째 컬럼 -->
+                <div class="activeGreen_footer_column">
+                    <h3 class="activeGreen_footer_title">오늘의 네오</h3>
+                    <ul>
+                        <li><a href="#">네오 플랫폼 다운로드</a></li>
+                        <li><a href="#">네오에이전시</a></li>
+                        <li><a href="#">#네오 이모티콘샵</a></li>
+                        <li><a href="#">#네오몰</a></li>
+                        <li><a href="#">#지속가능성</a></li>
+                        <li><a href="#">#개발자도구</a></li>
+                    </ul>
+                </div>
 
+                <!-- 두번째 컬럼 -->
+                <div class="activeGreen_footer_column">
+                    <h3 class="activeGreen_footer_title">네오 그룹의 서비스</h3>
+                    <ul>
+                        <li><a href="#">커뮤니케이션</a></li>
+                        <li><a href="#">일상편의</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">쇼핑</a></li>
+                        <li><a href="#">엔터테인먼트</a></li>
+                        <li><a href="#">업데이트</a></li>
+                    </ul>
+                </div>
+
+                <!-- 세번째 컬럼 -->
+                <div class="activeGreen_footer_column">
+                    <h3 class="activeGreen_footer_title">그룹</h3>
+                    <ul>
+                        <li><a href="#">네오</a></li>
+                        <li><a href="#">네오페이</a></li>
+                        <li><a href="#">네오뱅크</a></li>
+                        <li><a href="#">네오모빌리티</a></li>
+                        <li><a href="#">네오스타일</a></li>
+                        <li><a href="#">네오엔터테인먼트</a></li>
+                    </ul>
+                </div>
+
+                <!-- 네번째 컬럼 -->
+                <div class="activeGreen_footer_column">
+                    <h3 class="activeGreen_footer_title">IR</h3>
+                    <ul>
+                        <li><a href="#">기업지배구조</a></li>
+                        <li><a href="#">주가정보</a></li>
+                        <li><a href="#">재무정보</a></li>
+                        <li><a href="#">IR행사</a></li>
+                        <li><a href="#">공시정보</a></li>
+                        <li><a href="#">공고</a></li>
+                    </ul>
+                </div>
+
+                <!-- 다섯번째 컬럼 -->
+                <div class="activeGreen_footer_column">
+                    <h3 class="activeGreen_footer_title">계정 및 지원</h3>
+                    <ul>
+                        <li><a href="#">네오계정</a></li>
+                        <li><a href="#">네오 프라이버시</a></li>
+                        <li><a href="#">네오 고객센터</a></li>
+                        <li><a href="#">다음 고객센터</a></li>
+                        <li><a href="#">커머스 고객센터</a></li>
+                        <li><a href="#">인재영입</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 하단 링크 -->
+            <div class="activeGreen_footer_links">
+                <a href="#">이용약관</a>
+                <a href="#">위치정보 이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">운영정책 및 법령</a>
+                <a href="#">접근성 안내</a>
+                <a href="#">브랜드보호정책</a>
+                <a href="#">권리침해신고안내</a>
+                <a href="#">공지사항</a>
+                <a href="#">사이버윤리실</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <!-- 저작권 -->
+            <p class="activeGreen_footer_copyright">© Neo Corp. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="./common/header/js/header.js"></script>
+    <script src="./common/footer/js/footer.js"></script>
     <script src="./randing/js/randing.js"></script>
   </body>
+
 </html>

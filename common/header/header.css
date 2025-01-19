@@ -1,6 +1,3 @@
-.header {
-  height: 91px;
-}
 
 .activeGreen_nav {
   position: fixed;
@@ -40,10 +37,18 @@
   text-decoration: none;
   color: #000;
   position: relative;
+  padding: 10px 20px;
+  border-radius: 999px;
 }
 
 .activeGreen_nav_item:hover {
-  color: #333;
+  background-color: #e8f3ff;
+}
+
+
+.activeGreen_nav_item:active {
+  color: #fff;
+  background-color: #000;
 }
 
 .activeGreen_nav_right {
