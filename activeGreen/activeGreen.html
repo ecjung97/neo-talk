@@ -1,959 +1,1441 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
 
     <script src="../includeHTML.js"></script>
-    <link rel="stylesheet" href="../common.css">
-    <link rel="stylesheet" href="activeGreen.css">
-    <link rel="stylesheet" href="../common/header/header.css">
-    <link rel="stylesheet" href="../common/footer/footer.css">
-</head>
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="activeGreen.css" />
+    <link rel="stylesheet" href="../common/header/header.css" />
+    <link rel="stylesheet" href="../common/footer/footer.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <nav class="activeGreen_nav">
-            <div class="activeGreen_nav_inner">
-                <a href="/index.html" class="activeGreen_nav_logo">Neo</a>
+      <nav class="activeGreen_nav">
+        <div class="activeGreen_nav_inner">
+          <a href="/index.html" class="activeGreen_nav_logo">Neo</a>
 
-                <div class="activeGreen_nav_menu">
-                    <div class="activeGreen_nav_menu">
-                        <a href="../../culture/culture.html" class="activeGreen_nav_item">네오의 문화</a>
-                        <a href="../../service/service.html" class="activeGreen_nav_item">서비스</a>
-                        <a href="../../projectRegular/projectRegular.html" class="activeGreen_nav_item">프로젝트 단골</a>
-                        <a href="../../activeGreen/activeGreen.html" class="activeGreen_nav_item">액티브 그린</a>
-                    </div>
-
-                </div>
-
-                <div class="activeGreen_nav_right">
-                    <!-- 검색 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon search_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            <path d="M21 21L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </button>
-
-                    <!-- 지구본 아이콘 -->
-                    <button type="button" id="translateBtn" class="activeGreen_nav_icon globe_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
-                                stroke-width="2" />
-                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </button>
-
-                    <!-- 달 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon dark_mode_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-
-                    <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
-                    <button type="button" id="hamburgerBtn" class="activeGreen_nav_icon hamburger_icon" id="
-                        hamburgerBtn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </button>
-                </div>
+          <div class="activeGreen_nav_menu">
+            <div class="activeGreen_nav_menu">
+              <a href="../../culture/culture.html" class="activeGreen_nav_item"
+                >네오의 문화</a
+              >
+              <a href="../../service/service.html" class="activeGreen_nav_item"
+                >서비스</a
+              >
+              <a
+                href="../../projectRegular/projectRegular.html"
+                class="activeGreen_nav_item"
+                >프로젝트 단골</a
+              >
+              <a
+                href="../../activeGreen/activeGreen.html"
+                class="activeGreen_nav_item"
+                >액티브 그린</a
+              >
             </div>
-        </nav>
+          </div>
 
+          <div class="activeGreen_nav_right">
+            <!-- 검색 아이콘 -->
+            <button type="button" class="activeGreen_nav_icon search_icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M21 21L17 17"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
 
-        <!-- 반응형 사이드바 -->
-        <div id="activeGreen_sidebar" class="activeGreen_sidebar">
-            <div class="activeGreen_sidebar_inner">
-                <div class="activeGreen_top_icons">
-                    <!-- 달 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
+            <!-- 지구본 아이콘 -->
+            <button
+              type="button"
+              id="translateBtn"
+              class="activeGreen_nav_icon globe_icon"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                />
+                <path d="M3 12H21" stroke="#195AA6" stroke-width="2" />
+              </svg>
+            </button>
 
-                    <!-- 지구본 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
-                                stroke-width="2" />
-                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </button>
+            <!-- 달 아이콘 -->
+            <button type="button" class="activeGreen_nav_icon dark_mode_icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
 
-                    <!-- 닫기 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon activeGreen_sidebar_close">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="activeGreen_sidebar_menu">
-                    <a href="../../culture/culture.html" class="activeGreen_sidebar_item">
-                        <span>네오의 문화</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="#" class="activeGreen_sidebar_item">
-                        <span>서비스</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="../../projectRegular/projectRegular.html" class="activeGreen_sidebar_item">
-                        <span>프로젝트 단골</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="../../activeGreen/activeGreen.html" class="activeGreen_sidebar_item">
-                        <span>액티브 그린</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-
-                </div>
-            </div>
+            <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
+            <button
+              type="button"
+              id="hamburgerBtn"
+              class="activeGreen_nav_icon hamburger_icon"
+              id="
+                            hamburgerBtn"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12H21M3 6H21M3 18H21"
+                  stroke="#195AA6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </nav>
 
-        <!-- 사이드바 오버레이 -->
-        <div id="sidebar_overlay" class="activeGreen_sidebar_overlay"></div>
+      <!-- 반응형 사이드바 -->
+      <div id="activeGreen_sidebar" class="activeGreen_sidebar">
+        <div class="activeGreen_sidebar_inner">
+          <div class="activeGreen_top_icons">
+            <!-- 달 아이콘 -->
+            <button type="button" class="activeGreen_nav_icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
 
+            <!-- 지구본 아이콘 -->
+            <button type="button" class="activeGreen_nav_icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path
+                  d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
+
+            <!-- 닫기 아이콘 -->
+            <button
+              type="button"
+              class="activeGreen_nav_icon activeGreen_sidebar_close"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M18 6L6 18M6 6L18 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="activeGreen_sidebar_menu">
+            <a
+              href="../../culture/culture.html"
+              class="activeGreen_sidebar_item"
+            >
+              <span>네오의 문화</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12H19M19 12L13 6M19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="activeGreen_sidebar_item">
+              <span>서비스</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12H19M19 12L13 6M19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="../../projectRegular/projectRegular.html"
+              class="activeGreen_sidebar_item"
+            >
+              <span>프로젝트 단골</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12H19M19 12L13 6M19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="../../activeGreen/activeGreen.html"
+              class="activeGreen_sidebar_item"
+            >
+              <span>액티브 그린</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12H19M19 12L13 6M19 12L13 18"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 사이드바 오버레이 -->
+      <div id="sidebar_overlay" class="activeGreen_sidebar_overlay"></div>
     </header>
 
     <main class="activeGreen_wrap">
-        <!-- Header Section -->
-        <article class="activeGreen_content_article">
-            <section class="activeGreen_header">
-                <div class="activeGreen_header_content">
-                    <img src="./assets/image/activeGreen_leaf.gif" alt="leaf-image">
-                    <h1 class="activeGreen_header_title">네오 액티브그린</h1>
+      <!-- Header Section -->
+      <article class="activeGreen_content_article">
+        <section class="activeGreen_header">
+          <div class="activeGreen_header_content">
+            <img src="./assets/image/activeGreen_leaf.gif" alt="leaf-image" />
+            <h1 class="activeGreen_header_title">네오 액티브그린</h1>
+          </div>
+          <h2 class="activeGreen_header_subtitle">
+            네오와 이용자가 함께 만들어가는<span class="mobile-break"></span>
+            지속가능한 지구
+          </h2>
+          <p class="activeGreen_header_desc">
+            '액티브그린'은 기업의 환경 책임을 넘어<span
+              class="mobile-break"
+            ></span>
+            이용자와 함께 환경 문제를
+            <span class="tablet-break"></span>해결하고자 하는<span
+              class="mobile-break"
+            ></span>
+            네오의 환경 이니셔티브로,
+            <br />
+            서비스와 플랫폼을 통해<span class="mobile-break"></span> 이용자들의
+            친환경 활동 참여를 촉진하고자 합니다.
+          </p>
+        </section>
+
+        <!-- Carbon Index Section -->
+        <section class="section_activeGreen">
+          <div class="info_section activeGreen_carbonIndex_info">
+            <div class="activeGreen_carbonIndex_info-box_bnr">
+              <strong class="activeGreen_carbonIndex_title">
+                2023년 이용자 환경 기여<span class="mobile-break"></span>임팩트
+                지표, 카본인덱스<span class="activeGreen_carbonIndex_title-beta"
+                  >Beta</span
+                >
+              </strong>
+              <span class="activeGreen_carbonIndex_number">
+                54,642,845 <span class="activeGreen_carbonIndex_unit">KUC</span>
+              </span>
+              <button
+                type="button"
+                class="activeGreen_carbonIndex_button"
+                data-modal-type="carbonIndex"
+              >
+                네오 카본인덱스란?
+              </button>
+            </div>
+            <p class="activeGreen_carbonIndex_footer">
+              * 네오 카본인덱스는 서울대학교 기후변화센터와 함께 하며, 이용자
+              기여로 만든 탄소감축량은 '물랏풋 기업의 사회적감축 산정
+              가이드라인'에 의해 산정됩니다. <a href="#">자세히 보기 ›</a>
+            </p>
+
+            <div class="box_item">
+              <div tabindex="0" class="wrap_item">
+                <div class="inner_item item_1">
+                  <strong class="tit_item">2만 7천톤</strong>
+                  <p class="desc_item">
+                    <span> 이용자 환경 기여로 만든<br />탄소감축량 </span>
+                    <button
+                      type="button"
+                      class="btn_footnote"
+                      data-footnote="1"
+                    >
+                      1)<span class="screen_out">, 각주 보기</span>
+                    </button>
+                  </p>
                 </div>
-                <h2 class="activeGreen_header_subtitle">네오와 이용자가 함께 만들어가는<span class="mobile-break"></span> 지속가능한 지구
-                </h2>
-                <p class="activeGreen_header_desc">'액티브그린'은 기업의 환경 책임을 넘어<span class="mobile-break"></span> 이용자와 함께 환경
-                    문제를
-                    <span class="tablet-break"></span>해결하고자 하는<span class="mobile-break"></span> 네오의 환경 이니셔티브로,
+              </div>
+              <div tabindex="0" class="wrap_item">
+                <div class="inner_item item_2">
+                  <strong class="tit_item">나무 20만 그루</strong>
+                  <p class="desc_item">
+                    <span>
+                      이용자 탄소감축량을 모으면 <br />축구장 230개에 숲을 채운
+                      효과
+                    </span>
+                    <button
+                      type="button"
+                      class="btn_footnote"
+                      data-footnote="2"
+                    >
+                      2)<span class="screen_out">, 각주 보기</span>
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" class="wrap_item">
+                <div class="inner_item item_3">
+                  <strong class="tit_item">28억 2천만원</strong>
+                  <p class="desc_item">
+                    <span>
+                      이용자와 네오가 함께 모은 <br />환경을 위한 기금
+                    </span>
+                    <button
+                      type="button"
+                      class="btn_footnote"
+                      data-footnote="3"
+                    >
+                      3)<span class="screen_out">, 각주 보기</span>
+                    </button>
+                  </p>
+                </div>
+              </div>
+              <div tabindex="0" class="wrap_item">
+                <div class="inner_item item_4">
+                  <strong class="tit_item">4,391,791명</strong>
+                  <p class="desc_item">
+                    <span> 친환경 기여 활동에 참여한 <br />이용자 수 </span>
+                    <button
+                      type="button"
+                      class="btn_footnote"
+                      data-footnote="4"
+                    >
+                      4)<span class="screen_out">, 각주 보기</span>
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네오를 통해 전환하기 -->
+          <div class="info_section">
+            <h4 class="activeGreen_transform_mainTitle">
+              네오를 통해 <span class="emph_tit">전환</span>하기
+            </h4>
+            <div class="activeGreen_transform">
+              <div class="activeGreen_transform_item">
+                <div class="activeGreen_transform_content">
+                  <strong class="activeGreen_transform_title"
+                    >더 많은 전기차 이용하기</strong
+                  >
+                  <p class="activeGreen_transform_desc">
+                    네오T 전기택시,
                     <br />
-                    서비스와 플랫폼을 통해<span class="mobile-break"></span> 이용자들의 친환경 활동 참여를 촉진하고자 합니다.
-                </p>
-            </section>
-
-            <!-- Carbon Index Section -->
-            <section class="section_activeGreen">
-                <div class="info_section activeGreen_carbonIndex_info">
-                    <div class="activeGreen_carbonIndex_info-box_bnr">
-                        <strong class="activeGreen_carbonIndex_title">
-                            2023년 이용자 환경 기여<span class="mobile-break"></span>임팩트 지표, 카본인덱스<span
-                                class="activeGreen_carbonIndex_title-beta">Beta</span>
-                        </strong>
-                        <span class="activeGreen_carbonIndex_number">
-                            54,642,845 <span class="activeGreen_carbonIndex_unit">KUC</span>
-                        </span>
-                        <button type="button" class="activeGreen_carbonIndex_button" data-modal-type="carbonIndex">
-                            네오 카본인덱스란?
-                        </button>
-                    </div>
-                    <p class="activeGreen_carbonIndex_footer">
-                        * 네오 카본인덱스는 서울대학교 기후변화센터와 함께 하며, 이용자 기여로 만든 탄소감축량은
-                        '물랏풋 기업의 사회적감축 산정 가이드라인'에 의해 산정됩니다. <a href="#">자세히 보기 ›</a>
-                    </p>
-
-                    <div class="box_item">
-                        <div tabindex="0" class="wrap_item">
-                            <div class="inner_item item_1">
-                                <strong class="tit_item">2만 7천톤</strong>
-                                <p class="desc_item">
-                                    <span>
-                                        이용자 환경 기여로 만든<br />탄소감축량
-                                    </span>
-                                    <button type="button" class="btn_footnote" data-footnote="1">
-                                        1)<span class="screen_out">, 각주 보기</span>
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" class="wrap_item">
-                            <div class="inner_item item_2">
-                                <strong class="tit_item">나무 20만 그루</strong>
-                                <p class="desc_item">
-                                    <span>
-                                        이용자 탄소감축량을 모으면 <br />축구장 230개에 숲을 채운 효과
-                                    </span>
-                                    <button type="button" class="btn_footnote" data-footnote="2">
-                                        2)<span class="screen_out">, 각주 보기</span>
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" class="wrap_item">
-                            <div class="inner_item item_3">
-                                <strong class="tit_item">28억 2천만원</strong>
-                                <p class="desc_item">
-                                    <span>
-                                        이용자와 네오가 함께 모은 <br />환경을 위한 기금
-                                    </span>
-                                    <button type="button" class="btn_footnote" data-footnote="3">
-                                        3)<span class="screen_out">, 각주 보기</span>
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                        <div tabindex="0" class="wrap_item">
-                            <div class="inner_item item_4">
-                                <strong class="tit_item">4,391,791명</strong>
-                                <p class="desc_item">
-                                    <span>
-                                        친환경 기여 활동에 참여한 <br />이용자 수
-                                    </span>
-                                    <button type="button" class="btn_footnote" data-footnote="4">
-                                        4)<span class="screen_out">, 각주 보기</span>
-                                    </button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    전기차 총 이용거리
+                  </p>
+                  <img
+                    src="./assets/image/transform_bnr1_1.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_transform_number"
+                  />
+                  <img
+                    src="./assets/image/transform_bnr1.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_transform_icon"
+                  />
+                  <button
+                    type="button"
+                    class="activeGreen_transform_button"
+                    data-modal-type="electric"
+                  >
+                    <span class="screen_out">상세 내용 보기</span>
+                  </button>
                 </div>
+              </div>
 
-                <!-- 네오를 통해 전환하기 -->
-                <div class="info_section">
-                    <h4 class="activeGreen_transform_mainTitle">
-                        네오를 통해 <span class="emph_tit">전환</span>하기
-                    </h4>
-                    <div class="activeGreen_transform">
-                        <div class="activeGreen_transform_item">
-                            <div class="activeGreen_transform_content">
-                                <strong class="activeGreen_transform_title">더 많은 전기차 이용하기</strong>
-                                <p class="activeGreen_transform_desc">
-                                    네오T 전기택시,
-                                    <br />
-                                    전기차 총 이용거리
-                                </p>
-                                <img src="./assets/image/transform_bnr1_1.png" alt="숫자 이미지"
-                                    class="activeGreen_transform_number">
-                                <img src="./assets/image/transform_bnr1.png" alt="아이콘 이미지"
-                                    class="activeGreen_transform_icon">
-                                <button type="button" class="activeGreen_transform_button" data-modal-type="electric">
-                                    <span class="screen_out">상세 내용 보기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_transform_item">
-                            <div class="activeGreen_transform_content">
-                                <strong class="activeGreen_transform_title">전자 청구서•증명서 전환하기</strong>
-                                <p class="activeGreen_transform_desc">
-                                    네오페이와 네오 지갑을 통한
-                                    <br />
-                                    전자문서 전환
-                                </p>
-                                <img src="./assets/image/transform_bnr2_2.png" alt="숫자 이미지"
-                                    class="activeGreen_transform_number">
-                                <img src="./assets/image/transform_bnr2.png" alt="아이콘 이미지"
-                                    class="activeGreen_transform_icon">
-                                <button type="button" class="activeGreen_transform_button" data-modal-type="document">
-                                    <span class="screen_out">상세 내용 보기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_transform_item">
-                            <div class="activeGreen_transform_content">
-                                <strong class="activeGreen_transform_title">지구와 지갑을 지키는<br />자전거 타기</strong>
-                                <p class="activeGreen_transform_desc">
-                                    네오맵 자전거,
-                                    <br />
-                                    네오T바이크 총 이동거리
-                                </p>
-                                <img src="./assets/image/transform_bnr3_3.png" alt="숫자 이미지"
-                                    class="activeGreen_transform_number">
-                                <img src="./assets/image/transform_bnr3.png" alt="아이콘 이미지"
-                                    class="activeGreen_transform_icon">
-                                <button type="button" class="activeGreen_transform_button" data-modal-type="bicycle">
-                                    <span class="screen_out">상세 내용 보기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_transform_item">
-                            <div class="activeGreen_transform_content">
-                                <strong class="activeGreen_transform_title">지구와 우리를 위한 구매</strong>
-                                <p class="activeGreen_transform_desc">
-                                    네오톡 선물하기와 네오메이커스의
-                                    <br />
-                                    그린 라벨 구매 건수
-                                </p>
-                                <img src="./assets/image/transform_bnr4_4.png" alt="숫자 이미지"
-                                    class="activeGreen_transform_number">
-                                <img src="./assets/image/transform_bnr4.png" alt="아이콘 이미지"
-                                    class="activeGreen_transform_icon">
-                                <button type="button" class="activeGreen_transform_button" data-modal-type="purchase">
-                                    <span class="screen_out">상세 내용 보기</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              <div class="activeGreen_transform_item">
+                <div class="activeGreen_transform_content">
+                  <strong class="activeGreen_transform_title"
+                    >전자 청구서•증명서 전환하기</strong
+                  >
+                  <p class="activeGreen_transform_desc">
+                    네오페이와 네오 지갑을 통한
+                    <br />
+                    전자문서 전환
+                  </p>
+                  <img
+                    src="./assets/image/transform_bnr2_2.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_transform_number"
+                  />
+                  <img
+                    src="./assets/image/transform_bnr2.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_transform_icon"
+                  />
+                  <button
+                    type="button"
+                    class="activeGreen_transform_button"
+                    data-modal-type="document"
+                  >
+                    <span class="screen_out">상세 내용 보기</span>
+                  </button>
                 </div>
+              </div>
 
-                <!-- 네오를 통해 순환에 참여하기 -->
-                <div class="info_section">
-                    <h4 class="activeGreen_cycle_mainTitle">
-                        네오를 통해 <span class="emph_tit">순환</span>에 참여하기
-                    </h4>
-                    <div class="activeGreen_cycle">
-                        <div class="activeGreen_cycle_item">
-                            <div class="activeGreen_cycle_content box_shadow">
-                                <strong class="activeGreen_cycle_title">일회용품 없는<br />내 주변 상점 찾기</strong>
-                                <p class="activeGreen_cycle_desc">
-                                    이용자들이 함께 만든 장소 검색
-                                    <br />
-                                    #일회용품없는가게
-                                </p>
-                                <img src="./assets/image/cycle_bnr1_1.png" alt="숫자 이미지"
-                                    class="activeGreen_cycle_number">
-                                <img src="./assets/image/cycle_bnr1.png" alt="아이콘 이미지" class="activeGreen_cycle_icon">
-                                <button type="button" class="activeGreen_cycle_button">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_cycle_item">
-                            <div class="activeGreen_cycle_content box_shadow">
-                                <strong class="activeGreen_cycle_title">버려지는 것에서<br />새로운 쓸모를 찾은 제품</strong>
-                                <p class="activeGreen_cycle_desc">
-                                    새가버치에서
-                                    <br />
-                                    2023년 수거된 폐기물 개수
-                                </p>
-                                <img src="./assets/image/cycle_bnr2_2.png" alt="숫자 이미지"
-                                    class="activeGreen_cycle_number">
-                                <img src="./assets/image/cycle_bnr2.png" alt="아이콘 이미지" class="activeGreen_cycle_icon">
-                                <button type="button" class="activeGreen_cycle_button">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_cycle_item">
-                            <div class="activeGreen_cycle_content box_shadow">
-                                <strong class="activeGreen_cycle_title">세상을 돕는 일일 수록<br />지속가능한 굿즈로</strong>
-                                <p class="activeGreen_cycle_desc">
-                                    피스오브마인드(POM)의
-                                    <br />
-                                    재생원료, 친환경 공정 생산품 구매 건수
-                                </p>
-                                <img src="./assets/image/cycle_bnr3_3.png" alt="숫자 이미지"
-                                    class="activeGreen_cycle_number">
-                                <img src="./assets/image/cycle_bnr3.png" alt="아이콘 이미지" class="activeGreen_cycle_icon">
-                                <button type="button" class="activeGreen_cycle_button">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_cycle_item">
-                            <div class="activeGreen_cycle_content box_shadow">
-                                <strong class="activeGreen_cycle_title">산지폐기될 뻔한<br />농수산물 제값하도록</strong>
-                                <p class="activeGreen_cycle_desc">
-                                    제가버치로 2023년 판매된
-                                    <br />
-                                    농수축산물의 총 중량
-                                </p>
-                                <img src="./assets/image/cycle_bnr4_4.png" alt="숫자 이미지"
-                                    class="activeGreen_cycle_number">
-                                <img src="./assets/image/cycle_bnr4.png" alt="아이콘 이미지" class="activeGreen_cycle_icon">
-                                <button type="button" class="activeGreen_cycle_button">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              <div class="activeGreen_transform_item">
+                <div class="activeGreen_transform_content">
+                  <strong class="activeGreen_transform_title"
+                    >지구와 지갑을 지키는<br />자전거 타기</strong
+                  >
+                  <p class="activeGreen_transform_desc">
+                    네오맵 자전거,
+                    <br />
+                    네오T바이크 총 이동거리
+                  </p>
+                  <img
+                    src="./assets/image/transform_bnr3_3.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_transform_number"
+                  />
+                  <img
+                    src="./assets/image/transform_bnr3.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_transform_icon"
+                  />
+                  <button
+                    type="button"
+                    class="activeGreen_transform_button"
+                    data-modal-type="bicycle"
+                  >
+                    <span class="screen_out">상세 내용 보기</span>
+                  </button>
                 </div>
+              </div>
 
-
-                <!-- 네오를 통해 그린 디지털 설정하기 -->
-                <div class="info_section">
-                    <h4 class="activeGreen_digital_mainTitle">
-                        네오를 통해 <span class="emph_tit">그린 디지털</span> 설정하기
-                    </h4>
-                    <div class="activeGreen_digital">
-                        <div class="activeGreen_digital_item">
-                            <div class="activeGreen_digital_content box_shadow">
-                                <strong class="activeGreen_digital_title">네오톡 미디어<br>공유 버튼 이용하기</strong>
-                                <p class="activeGreen_digital_desc">
-                                    데이터 추가 소비 제로
-                                </p>
-                                <div class="activeGreen_digital_value">
-                                    <span class="activeGreen_digital_number">0</span>
-                                    <span class="activeGreen_digital_arrow arrow-red">▼</span>
-                                </div>
-                                <img src="./assets/image/digital_bnr1.png" alt="미디어 공유 아이콘"
-                                    class="activeGreen_digital_icon">
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_digital_item">
-                            <div class="activeGreen_digital_content box_shadow">
-                                <strong class="activeGreen_digital_title">스마트폰<br>다크모드 설정</strong>
-                                <p class="activeGreen_digital_desc">
-                                    에너지 사용 절감 효과
-                                </p>
-                                <div class="activeGreen_digital_value">
-                                    <span class="activeGreen_digital_number">20%</span>
-                                    <span class="activeGreen_digital_arrow arrow-red">▼</span>
-                                </div>
-                                <img src="./assets/image/digital_bnr2.png" alt="다크모드 아이콘"
-                                    class="activeGreen_digital_icon">
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_digital_item">
-                            <div class="activeGreen_digital_content box_shadow">
-                                <strong class="activeGreen_digital_title">전자문서,<br>전자청구서 설정</strong>
-                                <p class="activeGreen_digital_desc">
-                                    종이 사용 및 발송 비용 제로
-                                </p>
-                                <div class="activeGreen_digital_value">
-                                    <span class="activeGreen_digital_number">0</span>
-                                    <span class="activeGreen_digital_arrow arrow-dash">-</span>
-                                </div>
-                                <img src="./assets/image/digital_bnr3.png" alt="전자문서 아이콘"
-                                    class="activeGreen_digital_icon">
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_digital_item">
-                            <div class="activeGreen_digital_content box_shadow">
-                                <strong class="activeGreen_digital_title">메신저, 메일<br>에코모드 설정</strong>
-                                <p class="activeGreen_digital_desc">
-                                    7일 후 휴지통 자동 비우기
-                                </p>
-                                <div class="activeGreen_digital_value">
-                                    <span class="activeGreen_digital_number">7일</span>
-                                </div>
-                                <img src="./assets/image/digital_bnr4.png" alt="메일 아이콘"
-                                    class="activeGreen_digital_icon">
-                            </div>
-                        </div>
-
-                        <div class="activeGreen_digital_item">
-                            <div class="activeGreen_digital_content box_shadow">
-                                <strong class="activeGreen_digital_title">휴대폰 속<br>특학생증 발급받기</strong>
-                                <p class="activeGreen_digital_desc">
-                                    분실 걱정 없는 디지털카드
-                                </p>
-                                <div class="activeGreen_digital_value">
-                                    <span class="activeGreen_digital_number">0</span>
-                                    <span class="activeGreen_digital_arrow arrow-dash">-</span>
-                                </div>
-                                <img src="./assets/image/digital_bnr5.png" alt="학생증 아이콘"
-                                    class="activeGreen_digital_icon">
-                            </div>
-                        </div>
-                    </div>
+              <div class="activeGreen_transform_item">
+                <div class="activeGreen_transform_content">
+                  <strong class="activeGreen_transform_title"
+                    >지구와 우리를 위한 구매</strong
+                  >
+                  <p class="activeGreen_transform_desc">
+                    네오톡 선물하기와 네오메이커스의
+                    <br />
+                    그린 라벨 구매 건수
+                  </p>
+                  <img
+                    src="./assets/image/transform_bnr4_4.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_transform_number"
+                  />
+                  <img
+                    src="./assets/image/transform_bnr4.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_transform_icon"
+                  />
+                  <button
+                    type="button"
+                    class="activeGreen_transform_button"
+                    data-modal-type="purchase"
+                  >
+                    <span class="screen_out">상세 내용 보기</span>
+                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <!-- 네오와 함께 자연보존에 나서기 -->
-                <div class="info_section">
-                    <h4 class="activeGreen_nature_mainTitle">
-                        네오와 함께 <span class="emph_tit">자연보존</span>에 나서기
-                    </h4>
-                    <div class="activeGreen_nature">
-                        <div class="activeGreen_nature_item">
-                            <div class="activeGreen_nature_content box_shadow">
-                                <div class="activeGreen_nature_image forest_bg">
-                                    <div class="content_overlay">
-                                        <div class="text_wrapper">
-                                            <p class="nature_text">이용자가 작은</p>
-                                            <div class="underline_wrapper">
-                                                <div class="yellow_underline"></div>
-                                                <p class="nature_text">만 해도</p>
-                                            </div>
-                                            <p class="nature_text">모이면 숲</p>
-                                        </div>
-                                        <ul class="activeGreen_nature_list">
-                                            <li>친환경실천</li>
-                                            <li>음악 플레이</li>
-                                            <li>전자문서 청구</li>
-                                            <li>구매</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <button type="button" class="activeGreen_nature_button" data-modal-type="nature">
-                                    <span class="plus_icon">+</span>
-                                </button>
-                            </div>
+          <!-- 네오를 통해 순환에 참여하기 -->
+          <div class="info_section">
+            <h4 class="activeGreen_cycle_mainTitle">
+              네오를 통해 <span class="emph_tit">순환</span>에 참여하기
+            </h4>
+            <div class="activeGreen_cycle">
+              <div class="activeGreen_cycle_item">
+                <div class="activeGreen_cycle_content box_shadow">
+                  <strong class="activeGreen_cycle_title"
+                    >일회용품 없는<br />내 주변 상점 찾기</strong
+                  >
+                  <p class="activeGreen_cycle_desc">
+                    이용자들이 함께 만든 장소 검색
+                    <br />
+                    #일회용품없는가게
+                  </p>
+                  <img
+                    src="./assets/image/cycle_bnr1_1.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_cycle_number"
+                  />
+                  <img
+                    src="./assets/image/cycle_bnr1.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_cycle_icon"
+                  />
+                  <button type="button" class="activeGreen_cycle_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="activeGreen_cycle_item">
+                <div class="activeGreen_cycle_content box_shadow">
+                  <strong class="activeGreen_cycle_title"
+                    >버려지는 것에서<br />새로운 쓸모를 찾은 제품</strong
+                  >
+                  <p class="activeGreen_cycle_desc">
+                    새가버치에서
+                    <br />
+                    2023년 수거된 폐기물 개수
+                  </p>
+                  <img
+                    src="./assets/image/cycle_bnr2_2.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_cycle_number"
+                  />
+                  <img
+                    src="./assets/image/cycle_bnr2.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_cycle_icon"
+                  />
+                  <button type="button" class="activeGreen_cycle_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="activeGreen_cycle_item">
+                <div class="activeGreen_cycle_content box_shadow">
+                  <strong class="activeGreen_cycle_title"
+                    >세상을 돕는 일일 수록<br />지속가능한 굿즈로</strong
+                  >
+                  <p class="activeGreen_cycle_desc">
+                    피스오브마인드(POM)의
+                    <br />
+                    재생원료, 친환경 공정 생산품 구매 건수
+                  </p>
+                  <img
+                    src="./assets/image/cycle_bnr3_3.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_cycle_number"
+                  />
+                  <img
+                    src="./assets/image/cycle_bnr3.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_cycle_icon"
+                  />
+                  <button type="button" class="activeGreen_cycle_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="activeGreen_cycle_item">
+                <div class="activeGreen_cycle_content box_shadow">
+                  <strong class="activeGreen_cycle_title"
+                    >산지폐기될 뻔한<br />농수산물 제값하도록</strong
+                  >
+                  <p class="activeGreen_cycle_desc">
+                    제가버치로 2023년 판매된
+                    <br />
+                    농수축산물의 총 중량
+                  </p>
+                  <img
+                    src="./assets/image/cycle_bnr4_4.png"
+                    alt="숫자 이미지"
+                    class="activeGreen_cycle_number"
+                  />
+                  <img
+                    src="./assets/image/cycle_bnr4.png"
+                    alt="아이콘 이미지"
+                    class="activeGreen_cycle_icon"
+                  />
+                  <button type="button" class="activeGreen_cycle_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네오를 통해 그린 디지털 설정하기 -->
+          <div class="info_section">
+            <h4 class="activeGreen_digital_mainTitle">
+              네오를 통해 <span class="emph_tit">그린 디지털</span> 설정하기
+            </h4>
+            <div class="activeGreen_digital">
+              <div class="activeGreen_digital_item">
+                <div class="activeGreen_digital_content box_shadow">
+                  <strong class="activeGreen_digital_title"
+                    >네오톡 미디어<br />공유 버튼 이용하기</strong
+                  >
+                  <p class="activeGreen_digital_desc">데이터 추가 소비 제로</p>
+                  <div class="activeGreen_digital_value">
+                    <span class="activeGreen_digital_number">0</span>
+                    <span class="activeGreen_digital_arrow arrow-red">▼</span>
+                  </div>
+                  <img
+                    src="./assets/image/digital_bnr1.png"
+                    alt="미디어 공유 아이콘"
+                    class="activeGreen_digital_icon"
+                  />
+                </div>
+              </div>
+
+              <div class="activeGreen_digital_item">
+                <div class="activeGreen_digital_content box_shadow">
+                  <strong class="activeGreen_digital_title"
+                    >스마트폰<br />다크모드 설정</strong
+                  >
+                  <p class="activeGreen_digital_desc">에너지 사용 절감 효과</p>
+                  <div class="activeGreen_digital_value">
+                    <span class="activeGreen_digital_number">20%</span>
+                    <span class="activeGreen_digital_arrow arrow-red">▼</span>
+                  </div>
+                  <img
+                    src="./assets/image/digital_bnr2.png"
+                    alt="다크모드 아이콘"
+                    class="activeGreen_digital_icon"
+                  />
+                </div>
+              </div>
+
+              <div class="activeGreen_digital_item">
+                <div class="activeGreen_digital_content box_shadow">
+                  <strong class="activeGreen_digital_title"
+                    >전자문서,<br />전자청구서 설정</strong
+                  >
+                  <p class="activeGreen_digital_desc">
+                    종이 사용 및 발송 비용 제로
+                  </p>
+                  <div class="activeGreen_digital_value">
+                    <span class="activeGreen_digital_number">0</span>
+                    <span class="activeGreen_digital_arrow arrow-dash">-</span>
+                  </div>
+                  <img
+                    src="./assets/image/digital_bnr3.png"
+                    alt="전자문서 아이콘"
+                    class="activeGreen_digital_icon"
+                  />
+                </div>
+              </div>
+
+              <div class="activeGreen_digital_item">
+                <div class="activeGreen_digital_content box_shadow">
+                  <strong class="activeGreen_digital_title"
+                    >메신저, 메일<br />에코모드 설정</strong
+                  >
+                  <p class="activeGreen_digital_desc">
+                    7일 후 휴지통 자동 비우기
+                  </p>
+                  <div class="activeGreen_digital_value">
+                    <span class="activeGreen_digital_number">7일</span>
+                  </div>
+                  <img
+                    src="./assets/image/digital_bnr4.png"
+                    alt="메일 아이콘"
+                    class="activeGreen_digital_icon"
+                  />
+                </div>
+              </div>
+
+              <div class="activeGreen_digital_item">
+                <div class="activeGreen_digital_content box_shadow">
+                  <strong class="activeGreen_digital_title"
+                    >휴대폰 속<br />특학생증 발급받기</strong
+                  >
+                  <p class="activeGreen_digital_desc">
+                    분실 걱정 없는 디지털카드
+                  </p>
+                  <div class="activeGreen_digital_value">
+                    <span class="activeGreen_digital_number">0</span>
+                    <span class="activeGreen_digital_arrow arrow-dash">-</span>
+                  </div>
+                  <img
+                    src="./assets/image/digital_bnr5.png"
+                    alt="학생증 아이콘"
+                    class="activeGreen_digital_icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 네오와 함께 자연보존에 나서기 -->
+          <div class="info_section">
+            <h4 class="activeGreen_nature_mainTitle">
+              네오와 함께 <span class="emph_tit">자연보존</span>에 나서기
+            </h4>
+            <div class="activeGreen_nature">
+              <div class="activeGreen_nature_item">
+                <div class="activeGreen_nature_content box_shadow">
+                  <div class="activeGreen_nature_image forest_bg">
+                    <div class="content_overlay">
+                      <div class="text_wrapper">
+                        <p class="nature_text">이용자가 작은</p>
+                        <div class="underline_wrapper">
+                          <div class="yellow_underline"></div>
+                          <p class="nature_text">만 해도</p>
                         </div>
-
-                        <div class="activeGreen_nature_item">
-                            <div class="activeGreen_nature_content box_shadow yellow_bg">
-                                <div class="content_overlay">
-                                    <div class="text_wrapper">
-                                        <strong class="nature_title">탄소 회복력의 척도,<br>생물다양성 지키기</strong>
-                                    </div>
-                                    <ul class="nature_tag_list">
-                                        <li>#해양생태계 보존</li>
-                                        <li>#멸종위기종 보호</li>
-                                        <li>#꿀벌 보호</li>
-                                        <li>#산불피해지 복원</li>
-                                    </ul>
-                                </div>
-                                <button type="button" class="activeGreen_nature_button" data-modal-type="biodiversity">
-                                    <span class="plus_icon">+</span>
-                                </button>
-                            </div>
-                        </div>
+                        <p class="nature_text">모이면 숲</p>
+                      </div>
+                      <ul class="activeGreen_nature_list">
+                        <li>친환경실천</li>
+                        <li>음악 플레이</li>
+                        <li>전자문서 청구</li>
+                        <li>구매</li>
+                      </ul>
                     </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="activeGreen_nature_button"
+                    data-modal-type="nature"
+                  >
+                    <span class="plus_icon">+</span>
+                  </button>
                 </div>
+              </div>
 
-                <!-- 가위 구분선 -->
-                <div class="divider_wrap">
-                    <img src="./assets/image/img_line.png" alt="네오페이지 구분선" class="divider_img">
-                </div>
-
-                <!-- 네오 안에서의 환경 경영노력 -->
-                <div class="info_section">
-                    <div class="environment_header">
-                        <h2 class="environment_title">네오 안에서의 <span class="emph_tit">환경 경영</span>노력</h2>
-                        <p class="environment_desc">네오는 경영 전반에 걸쳐 환경 영향을 최소화하기 위한 활동을 지속하고,<br>2040 넷제로(Net Zero)를 목표로
-                            노력하고
-                            있습니다.</p>
+              <div class="activeGreen_nature_item">
+                <div class="activeGreen_nature_content box_shadow yellow_bg">
+                  <div class="content_overlay">
+                    <div class="text_wrapper">
+                      <strong class="nature_title"
+                        >탄소 회복력의 척도,<br />생물다양성 지키기</strong
+                      >
                     </div>
-
-                    <div class="environment_link_list">
-                        <a href="#" class="environment_link_item">
-                            <div class="environment_link_content">
-                                <span class="environment_link_text">네오의<br>환경경영 체계</span>
-                                <button type="button" class="activeGreen_environment_button ">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </a>
-                        <a href="#" class="environment_link_item">
-                            <div class="environment_link_content">
-                                <span class="environment_link_text">네오의<br>친환경 데이터센터</span>
-                                <button type="button" class="activeGreen_environment_button ">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </a>
-                        <a href="#" class="environment_link_item">
-                            <div class="environment_link_content">
-                                <span class="environment_link_text">네오 ESG 보고서<br>'네오의 약속과 책임'</span>
-                                <button type="button" class="activeGreen_environment_button">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                    <span class="screen_out">상세 페이지 새창 열기</span>
-                                </button>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 데이터 기준 섹션 -->
-                <div class="info_section activeGreen_reference">
-                    <h3 class="activeGreen_reference_title">데이터 기준</h3>
-                    <ul class="activeGreen_reference_list">
-                        <li class="activeGreen_reference_item">
-                            <span class="activeGreen_reference_number">1)</span>
-                            <div class="activeGreen_reference_content">
-                                서울대학교 기후대기연구실의 '풀랏풋 기업의 사회적감축 산정 가이드라인'에 의거한 방법론 적용, 해당 가이드라인은
-                                네오임팩트 페이지에서 다운로드 가능함 <a href="#" class="activeGreen_reference_link"
-                                    data-footnote="1">↑</a>
-                                <br>
-                                <a href="#">네오임팩트
-                                    바로가기 ▶</a>
-
-
-                            </div>
-                        </li>
-
-                        <li class="activeGreen_reference_item">
-                            <span class="activeGreen_reference_number">2)</span>
-                            <div class="activeGreen_reference_content">
-                                이용자 탄소감축량 1kgCO2e를 나무가 흡수하는 탄소량으로 환산할 경우, 국립산림과학원 「주요 산림수종의 표준 탄소흡수량, 중·소나무의 60년 누적 CO2
-                                흡수량 평균치」 (그루 당 141.04 kgCO2e) 적용
-                                <a href="#" class="activeGreen_reference_link" data-footnote="2">↑</a>
-                            </div>
-                        </li>
-
-                        <li class="activeGreen_reference_item">
-                            <span class="activeGreen_reference_number">3)</span>
-                            <div class="activeGreen_reference_content">
-                                2023년 이용자가 직접 기부한 환경 기금 1억 9천만원, 이용자 참여·구매·결제·이용한 만큼 네오가 조성한 환경 기금 26억 2천만원 합산액
-                                <a href="#" class="activeGreen_reference_link" data-footnote="3">↑</a>
-                            </div>
-                        </li>
-
-                        <li class="activeGreen_reference_item">
-                            <span class="activeGreen_reference_number">4)</span>
-                            <div class="activeGreen_reference_content">
-                                네오모빌리티 전기택시 이용자 수, 네오페이 전자문서·전자 청구서 이용자 수는 제외하고 합산
-                                <a href="#" class="activeGreen_reference_link" data-footnote="4">↑</a>
-                            </div>
-                        </li>
+                    <ul class="nature_tag_list">
+                      <li>#해양생태계 보존</li>
+                      <li>#멸종위기종 보호</li>
+                      <li>#꿀벌 보호</li>
+                      <li>#산불피해지 복원</li>
                     </ul>
+                  </div>
+                  <button
+                    type="button"
+                    class="activeGreen_nature_button"
+                    data-modal-type="biodiversity"
+                  >
+                    <span class="plus_icon">+</span>
+                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
 
-            </section>
-        </article>
+          <!-- 가위 구분선 -->
+          <div class="divider_wrap">
+            <img
+              src="./assets/image/img_line.png"
+              alt="네오페이지 구분선"
+              class="divider_img"
+            />
+          </div>
+
+          <!-- 네오 안에서의 환경 경영노력 -->
+          <div class="info_section">
+            <div class="environment_header">
+              <h2 class="environment_title">
+                네오 안에서의 <span class="emph_tit">환경 경영</span>노력
+              </h2>
+              <p class="environment_desc">
+                네오는 경영 전반에 걸쳐 환경 영향을 최소화하기 위한 활동을
+                지속하고,<br />2040 넷제로(Net Zero)를 목표로 노력하고 있습니다.
+              </p>
+            </div>
+
+            <div class="environment_link_list">
+              <a href="#" class="environment_link_item">
+                <div class="environment_link_content">
+                  <span class="environment_link_text"
+                    >네오의<br />환경경영 체계</span
+                  >
+                  <button type="button" class="activeGreen_environment_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#" class="environment_link_item">
+                <div class="environment_link_content">
+                  <span class="environment_link_text"
+                    >네오의<br />친환경 데이터센터</span
+                  >
+                  <button type="button" class="activeGreen_environment_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </a>
+              <a href="#" class="environment_link_item">
+                <div class="environment_link_content">
+                  <span class="environment_link_text"
+                    >네오 ESG 보고서<br />'네오의 약속과 책임'</span
+                  >
+                  <button type="button" class="activeGreen_environment_button">
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 11L11 1M11 1H4M11 1V8"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span class="screen_out">상세 페이지 새창 열기</span>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 데이터 기준 섹션 -->
+          <div class="info_section activeGreen_reference">
+            <h3 class="activeGreen_reference_title">데이터 기준</h3>
+            <ul class="activeGreen_reference_list">
+              <li class="activeGreen_reference_item">
+                <span class="activeGreen_reference_number">1)</span>
+                <div class="activeGreen_reference_content">
+                  서울대학교 기후대기연구실의 '풀랏풋 기업의 사회적감축 산정
+                  가이드라인'에 의거한 방법론 적용, 해당 가이드라인은 네오임팩트
+                  페이지에서 다운로드 가능함
+                  <a
+                    href="#"
+                    class="activeGreen_reference_link"
+                    data-footnote="1"
+                    >↑</a
+                  >
+                  <br />
+                  <a href="#">네오임팩트 바로가기 ▶</a>
+                </div>
+              </li>
+
+              <li class="activeGreen_reference_item">
+                <span class="activeGreen_reference_number">2)</span>
+                <div class="activeGreen_reference_content">
+                  이용자 탄소감축량 1kgCO2e를 나무가 흡수하는 탄소량으로 환산할
+                  경우, 국립산림과학원 「주요 산림수종의 표준 탄소흡수량,
+                  중·소나무의 60년 누적 CO2 흡수량 평균치」 (그루 당 141.04
+                  kgCO2e) 적용
+                  <a
+                    href="#"
+                    class="activeGreen_reference_link"
+                    data-footnote="2"
+                    >↑</a
+                  >
+                </div>
+              </li>
+
+              <li class="activeGreen_reference_item">
+                <span class="activeGreen_reference_number">3)</span>
+                <div class="activeGreen_reference_content">
+                  2023년 이용자가 직접 기부한 환경 기금 1억 9천만원, 이용자
+                  참여·구매·결제·이용한 만큼 네오가 조성한 환경 기금 26억
+                  2천만원 합산액
+                  <a
+                    href="#"
+                    class="activeGreen_reference_link"
+                    data-footnote="3"
+                    >↑</a
+                  >
+                </div>
+              </li>
+
+              <li class="activeGreen_reference_item">
+                <span class="activeGreen_reference_number">4)</span>
+                <div class="activeGreen_reference_content">
+                  네오모빌리티 전기택시 이용자 수, 네오페이 전자문서·전자 청구서
+                  이용자 수는 제외하고 합산
+                  <a
+                    href="#"
+                    class="activeGreen_reference_link"
+                    data-footnote="4"
+                    >↑</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
     </main>
-
 
     <!-- 모달 시작 -->
     <div class="activeGreen_modal" id="transformModal">
-        <div class="activeGreen_modal_content">
-            <button type="button" class="activeGreen_modal_close">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 1L1 11M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <span class="screen_out">모달 닫기</span>
-            </button>
+      <div class="activeGreen_modal_content">
+        <button type="button" class="activeGreen_modal_close">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 1L1 11M1 1L11 11"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="screen_out">모달 닫기</span>
+        </button>
 
-            <!-- 카본인덱스 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="carbonIndex" style="display: none;">
-                <h3 class="activeGreen_modal_title">일상에서도 누구나 쉽게<br>환경 실천에 나설 수 있도록</h3>
-                <h4 class="activeGreen_modal_subtitle">
-                    이용자 환경기여 임팩트지표, 네오 카본인덱스<span class="txt_beta">Beta</span>
-                </h4>
-                <p class="activeGreen_modal_desc">
-                    네오 카본인덱스<span class="txt_beta">Beta</span>는 이용자가 네오 서비스와 플랫폼을 통해 참여한 다양한 친환경 활동들을 이용자 환경 기여 효과로 계량화한
-                    것입니다.
-                    이용자들의 온실가스 감축 기여 및 사회적 가치 기여를 네오만의 지수로 환산, KUC(Kakao Users' Carbon-reduction)단위로 표시됩니다.
-                </p>
-                <h4 class="activeGreen_modal_subtitle">
-                    계량화를 통해 탄소 저감에 한 걸음 가까이
-                </h4>
-                <p class="activeGreen_modal_desc">
-                    카본인덱스는 베타 테스트 단계로, 이용자의 친환경 서비스 이용, 구매, 활동 등에서 발생하는 다양한 데이터를 수집·분석하고, 관련 연구 및 컨설팅을 파트너십을 통해 그 범위를
-                    확장, 고도화해 나가고
-                    있습니다.
-                    <br />
-                    카본인덱스 중 사회적감축에 해당하는 이용자 기반의 탄소감축량 산정은 서울대학교 기후대기연구실의의 협업을 통해 합법론적 검증계수를 적용했습니다.
-                </p>
-                <p class="activeGreen_modal_desc guide_link">
-                    <a href="#" class="activeGreen_modal_link"> 서울대학교 기후대기연터 '물랏풋 기업의 사회적감축 산정 가이드라인' 바로가기</a>
-                </p>
-                <h4 class="activeGreen_modal_subtitle">
-                    이용자 한 명의 작은 행동도 4천 800만이 모이면 태산
-                </h4>
-                <p class="activeGreen_modal_desc">
-                    한 사람이 이자는 영향은 작지만, 모든 사용자가 환경에 이로운 선택과 행동들을 한다면, 그 영향력은 놀랄만큼 클 것입니다. 네오는 이용자가 기후 변화 대응에 함께 공감하고 다양한
-                    친환경 활동에
-                    참여할 수 있는 방법을 모색하며 지금은 사회로의 전환을 위해 꾸준히 노력하겠습니다.
-                </p>
-            </div>
-
-            <!-- 전기차 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="electric">
-                <h3 class="activeGreen_modal_title">도로 위 모든 수송 차량을<br>전기로 바꿀 수 있다면</h3>
-                <p class="activeGreen_modal_desc">
-                    전체 온실가스 배출량의 14%가 고통에서 발생했습니다. 택시와 자가용으로 활용되는 승용차를 전기차로 바꾸는 것만으로도 환경에 크게 기여할 수 있습니다. 특히 1대 당 주행거리가
-                    많은 택시를 모두
-                    전기차로 전환한다면, 모든 차량에서 발생하는 온실배출량을 최대 10배까지 낮추는 효과가 있습니다.
-                </p>
-                <p class="activeGreen_modal_desc">
-                    네오모빌리티는 전기 택시 국내 지원 프로그램, 배터리 관리 서비스 등을 통해 전기 택시 전환을 독려하고 있으며, 전기차 충전소 정보 제공을 통해 전기차 사용자들의 편의를 도모하고
-                    있습니다.
-                </p>
-                <div class="activeGreen_modal_stats">
-                    <div class="stat_item">
-                        <strong>3억 6천km</strong>
-                        <p>네오T 전기택시 2023년도 총 주행거리<br />
-                            LPG택시 대비 탄소배출량 20% 감축효과
-                    </div>
-                    <div class="stat_item">
-                        <strong>8천 6백km</strong>
-                        <p>네오내비 전기차 이용자 2023년도 총 주행거리<br />
-                            내연기관 상반기 대비 탄소배출량 40% 감축효과</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 전자문서 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="document" style="display: none;">
-                <h3 class="activeGreen_modal_title">적은 선택이 살리는<br>나무 1그루, 물 10리터</h3>
-                <p class="activeGreen_modal_desc">
-                    전 세계에서 배어진 나무의 35%가 종이에 사용됩니다. 네오페이의 전자 문서와 모바일청구서, 네오톡 지갑 서비스의 전자 증명서로 전환하면 A4 용지를 만드는 데 소모되는 나무 1
-                    물로 또도
-                    이값도 수 있습니다.
-                </p>
-                <div class="activeGreen_modal_stats">
-                    <div class="stat_item">
-                        <strong>1억 2,701만건</strong>
-                        <p>전자 문서, 모바일 청구서, 전자 증명서<br />
-                            2023년도 총 전환 건수<br />
-                            종이 약 640톤 절감 효과
-                        <p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 자전거 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="bicycle" style="display: none;">
-                <h3 class="activeGreen_modal_title">지구 상에 가장 무해하고<br>빠른 이동수단, 자전거</h3>
-                <p class="activeGreen_modal_desc">
-                    자전거 및 전기 자전거는 탄소 배출이 적다는 이점도 있지만 기존 도로를 그대로 이용할 수 있고, 이동 중이나 전차 중에 편직하게 지치하는 비율도 낮습니다.
-                </p>
-                <p class="activeGreen_modal_desc">
-                    네오맵에서 제공하는 자전거 경로 안내나 내비게이션을 이용하면 보다 더 효율적인 이동이 가능하고, 전기자전거인 네오T바이크는 개인의 에너지 소모량을 줄이면서 더 빠르게 이동할 수
-                    있습니다.
-                </p>
-                <div class="activeGreen_modal_stats">
-                    <div class="stat_item">
-                        <strong>9백 9십만km</strong>
-                        <p>네오맵 자전거 내비게이션 기준<br />
-                            2023년도 총 주행거리</p>
-                    </div>
-                    <div class="stat_item">
-                        <strong>2천 6백만km</strong>
-                        <p>네오T 바이크<br />
-                            2023년도 총 주행거리</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 구매 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="purchase" style="display: none;">
-                <h3 class="activeGreen_modal_title">지구 부담은 줄이고<br>받는 기쁨은 더하는 구매</h3>
-                <p class="activeGreen_modal_desc">
-                    이왕 시야할 물건이라면 그린 라벨이 붙은 물건이 더 의미있죠. 네오톡 선물하기에서 #그린선물을 테그를 확인해보세요. 환경에 이로운 인증이 확인된 제품에만 표시하고 있습니다.
-                </p>
-                <p class="activeGreen_modal_desc">
-                    그린선물로 뜨인 나라 네오메이커스, 쇼핑하기 등에서는 환경을 고민하는 이용자들을 위해 제품 정보에나 양한 '그린라벨'을 표기하고 있습니다.
-                </p>
-                <p class="activeGreen_modal_desc">
-                    네오톡 선물하기 # 그린선물 제품 라벨: 무농약농산물, 유기농산물, 유기농식품, 저녹약농산물, 무항생제 축산물, 친환경 수산물 품질인증, 유기가공식품 인증, Evo Vegan
-                    Label, The
-                    Vegan Trademark 총 9개
-                </p>
-                <div class="activeGreen_modal_stats">
-                    <div class="stat_item">
-                        <strong>2,894,364건</strong>
-                        <p>네오톡 선물하기 및 메이커스의 그린 라벨<br />
-                            2023년도 총 구매 건수</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- 자연보존 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="nature" style="display: none;">
-                <h3 class="activeGreen_modal_title">나무 심기로<br>지역탄소 순환에 기여합니다</h3>
-                <p class="activeGreen_modal_desc">네오는 다양한 환경 캠페인을 통해 이용자의 참여만큼 다양한 환경 파트너들과 숲 기금을 조성하고, 도심, 분쟁 접경 지역, 바다
-                    인근,
-                    산불피해지 등 다양한 곳에 나무를 심고 있습니다.</p>
-                <p class="activeGreen_modal_desc">네오같이가치에서는 매년 환경의 날을 맞아 환경 캠페인을 열고 실천 인증에 참여한 수만큼 숲 조성 기금을 기부해 나무를 심고
-                    있습니다.
-                    사단법인 평화의숲과 함께 2022년에는 연천 지역에 1,026그루를 식재하였고, 2024년에는 춘천 지역에 700여 그루를 식재할 예정입니다.</p>
-                <p class="activeGreen_modal_desc">네오페이는 전자문서 전환 캠페인을 통해 조성한 기부금으로 산불피해지에 나무를 식재하였습니다.
-                </p>
-                <p class="activeGreen_modal_desc">네오메이커스는 사용자 구매가 발생할 때마다 환경기금인 에코씨드를 적립하고 그중 일부를 기부해 사단법인 생명의숲과 함께 도심과
-                    바다 인근에
-                    나무를 심고 있습니다.</p>
-                <p class="activeGreen_modal_desc">멜론 ‘숲;트리밍’은 응원하는 아티스트의 이름으로 숲을 조성하는 친환경 프로젝트입니다. 멜론 정기결제권을 이용하는 동안
-                    ‘숲;트리밍’
-                    페이지에서 좋아하는 아티스트 이름을 선택만 해두면, 매월 결제금액의 2%가 자동으로 적립되고, 이는 서울환경연합으로 기부해 숲을 조성합니다.</p>
-                <p class="activeGreen_modal_desc">나무는 자랄수록 탄소 흡수량이 더 늘어납니다. 네오는 이용자들의 환경 저감 마음 만큼 나무를 지키고, 심으면서 지구의 탄소
-                    순환에 기여해
-                    나가겠습니다.</p>
-                <div class="activeGreen_modal_stats">
-                    <div class="stat_item">
-                        <strong>6,538그루</strong>
-                        <p>네오와 사용자와 함께<br>2023년 심은 나무 수</p>
-                    </div>
-                    <div class="stat_item">
-                        <strong>4억 1,200만원</strong>
-                        <p>2023년 사용자 참여금만큼<br>네오가 조성한 숲 기금</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 생물다양성 모달 -->
-            <div class="activeGreen_modal_inner" data-modal-content="biodiversity">
-                <h3 class="activeGreen_modal_title">이용자와 함께 조성하는<br>생물다양성 기금 조성</h3>
-                <p class="activeGreen_modal_desc">네오는 지역사회 생물다양성 보호 및 산림 재생을 위해 다양한 이용자 참여형 활동을 추진하고 있습니다.
-                </p>
-                <div class="activeGreen_modal_subtitle_wrap">
-                    <h4 class="activeGreen_modal_subtitle">네오페이까지 2023 생물다양성 기금액<br><strong class="modal_amount">총 1억
-                            3,202만원</strong></h4>
-                    <p class="modal_amount_desc">이용자 기부금 5천 616만원 | 네오 기부금 7천 585만원</p>
-                </div>
-                <p class="activeGreen_modal_desc">네오의 대표적인 모금 플랫폼인 네오같이가치를 통해 다양한 단체가 해양 환경 보호 및 바다 생태계 보전, 동식물 보호를 위한
-                    모금을
-                    운영하고 있습니다. 네오는 이용자가 해당 모금에 댓글을 쓰거나 공유하는 만큼 대신 기부하고 있습니다.</p>
-                <p class="activeGreen_modal_desc">또 매년 환경의 날을 맞아 그린 디지털 캠페인을 통해이용자들이 실천 인증한 만큼 네오가 숲 조성 기금을 모아 나무를 식재하고
-                    있습니다.
-                </p>
-                <div class="activeGreen_modal_subtitle_wrap">
-                    <h4 class="activeGreen_modal_subtitle">네오메이커스 에코씨드 2023년 적립액<br><strong class="modal_amount">총 4억
-                            6,310만원</strong></h4>
-
-                </div>
-                <p class="activeGreen_modal_desc">네오메이커스의 에코씨드는 이용자가 주문할 때마다 수익금으로 마련하는 임팩트 기금입니다. 모인 에코씨드는 해양 쓰레기 정화,
-                    미세 먼지 방지
-                    숲 조성 등 지구를 돕는 활동에 쓰입니다.</p>
-                <div class="activeGreen_modal_subtitle_wrap">
-                    <h4 class="activeGreen_modal_subtitle">네오메이커스 2023년 세계동물의날 기금<br><strong class="modal_amount">총 3천
-                            200만원</strong></h4>
-
-                </div>
-                <p class="activeGreen_modal_desc">네오메이커스는 세계 동물의 날을 맞아 ‘꿀벌’을 주제로 다양한 굿즈를 제작해 판매하고, 판매 수익금 전액을 멸종위기 동물
-                    보호를 위해
-                    세계자연기금(WWF)에 기부하였습니다.</p>
-            </div>
+        <!-- 카본인덱스 모달 -->
+        <div
+          class="activeGreen_modal_inner"
+          data-modal-content="carbonIndex"
+          style="display: none"
+        >
+          <h3 class="activeGreen_modal_title">
+            일상에서도 누구나 쉽게<br />환경 실천에 나설 수 있도록
+          </h3>
+          <h4 class="activeGreen_modal_subtitle">
+            이용자 환경기여 임팩트지표, 네오 카본인덱스<span class="txt_beta"
+              >Beta</span
+            >
+          </h4>
+          <p class="activeGreen_modal_desc">
+            네오 카본인덱스<span class="txt_beta">Beta</span>는 이용자가 네오
+            서비스와 플랫폼을 통해 참여한 다양한 친환경 활동들을 이용자 환경
+            기여 효과로 계량화한 것입니다. 이용자들의 온실가스 감축 기여 및
+            사회적 가치 기여를 네오만의 지수로 환산, KUC(Kakao Users'
+            Carbon-reduction)단위로 표시됩니다.
+          </p>
+          <h4 class="activeGreen_modal_subtitle">
+            계량화를 통해 탄소 저감에 한 걸음 가까이
+          </h4>
+          <p class="activeGreen_modal_desc">
+            카본인덱스는 베타 테스트 단계로, 이용자의 친환경 서비스 이용, 구매,
+            활동 등에서 발생하는 다양한 데이터를 수집·분석하고, 관련 연구 및
+            컨설팅을 파트너십을 통해 그 범위를 확장, 고도화해 나가고 있습니다.
+            <br />
+            카본인덱스 중 사회적감축에 해당하는 이용자 기반의 탄소감축량 산정은
+            서울대학교 기후대기연구실의의 협업을 통해 합법론적 검증계수를
+            적용했습니다.
+          </p>
+          <p class="activeGreen_modal_desc guide_link">
+            <a href="#" class="activeGreen_modal_link">
+              서울대학교 기후대기연터 '물랏풋 기업의 사회적감축 산정 가이드라인'
+              바로가기</a
+            >
+          </p>
+          <h4 class="activeGreen_modal_subtitle">
+            이용자 한 명의 작은 행동도 4천 800만이 모이면 태산
+          </h4>
+          <p class="activeGreen_modal_desc">
+            한 사람이 이자는 영향은 작지만, 모든 사용자가 환경에 이로운 선택과
+            행동들을 한다면, 그 영향력은 놀랄만큼 클 것입니다. 네오는 이용자가
+            기후 변화 대응에 함께 공감하고 다양한 친환경 활동에 참여할 수 있는
+            방법을 모색하며 지금은 사회로의 전환을 위해 꾸준히 노력하겠습니다.
+          </p>
         </div>
+
+        <!-- 전기차 모달 -->
+        <div class="activeGreen_modal_inner" data-modal-content="electric">
+          <h3 class="activeGreen_modal_title">
+            도로 위 모든 수송 차량을<br />전기로 바꿀 수 있다면
+          </h3>
+          <p class="activeGreen_modal_desc">
+            전체 온실가스 배출량의 14%가 고통에서 발생했습니다. 택시와
+            자가용으로 활용되는 승용차를 전기차로 바꾸는 것만으로도 환경에 크게
+            기여할 수 있습니다. 특히 1대 당 주행거리가 많은 택시를 모두 전기차로
+            전환한다면, 모든 차량에서 발생하는 온실배출량을 최대 10배까지 낮추는
+            효과가 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오모빌리티는 전기 택시 국내 지원 프로그램, 배터리 관리 서비스 등을
+            통해 전기 택시 전환을 독려하고 있으며, 전기차 충전소 정보 제공을
+            통해 전기차 사용자들의 편의를 도모하고 있습니다.
+          </p>
+          <div class="activeGreen_modal_stats">
+            <div class="stat_item">
+              <strong>3억 6천km</strong>
+              <p>
+                네오T 전기택시 2023년도 총 주행거리<br />
+                LPG택시 대비 탄소배출량 20% 감축효과
+              </p>
+            </div>
+
+            <div class="stat_item">
+              <strong>8천 6백km</strong>
+              <p>
+                네오내비 전기차 이용자 2023년도 총 주행거리<br />
+                내연기관 상반기 대비 탄소배출량 40% 감축효과
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 전자문서 모달 -->
+        <div
+          class="activeGreen_modal_inner"
+          data-modal-content="document"
+          style="display: none"
+        >
+          <h3 class="activeGreen_modal_title">
+            적은 선택이 살리는<br />나무 1그루, 물 10리터
+          </h3>
+          <p class="activeGreen_modal_desc">
+            전 세계에서 배어진 나무의 35%가 종이에 사용됩니다. 네오페이의 전자
+            문서와 모바일청구서, 네오톡 지갑 서비스의 전자 증명서로 전환하면 A4
+            용지를 만드는 데 소모되는 나무 1 물로 또도 이값도 수 있습니다.
+          </p>
+          <div class="activeGreen_modal_stats">
+            <div class="stat_item">
+              <strong>1억 2,701만건</strong>
+              <p>
+                전자 문서, 모바일 청구서, 전자 증명서<br />
+                2023년도 총 전환 건수<br />
+                종이 약 640톤 절감 효과
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 자전거 모달 -->
+        <div
+          class="activeGreen_modal_inner"
+          data-modal-content="bicycle"
+          style="display: none"
+        >
+          <h3 class="activeGreen_modal_title">
+            지구 상에 가장 무해하고<br />빠른 이동수단, 자전거
+          </h3>
+          <p class="activeGreen_modal_desc">
+            자전거 및 전기 자전거는 탄소 배출이 적다는 이점도 있지만 기존 도로를
+            그대로 이용할 수 있고, 이동 중이나 전차 중에 편직하게 지치하는
+            비율도 낮습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오맵에서 제공하는 자전거 경로 안내나 내비게이션을 이용하면 보다 더
+            효율적인 이동이 가능하고, 전기자전거인 네오T바이크는 개인의 에너지
+            소모량을 줄이면서 더 빠르게 이동할 수 있습니다.
+          </p>
+          <div class="activeGreen_modal_stats">
+            <div class="stat_item">
+              <strong>9백 9십만km</strong>
+              <p>
+                네오맵 자전거 내비게이션 기준<br />
+                2023년도 총 주행거리
+              </p>
+            </div>
+            <div class="stat_item">
+              <strong>2천 6백만km</strong>
+              <p>
+                네오T 바이크<br />
+                2023년도 총 주행거리
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 구매 모달 -->
+        <div
+          class="activeGreen_modal_inner"
+          data-modal-content="purchase"
+          style="display: none"
+        >
+          <h3 class="activeGreen_modal_title">
+            지구 부담은 줄이고<br />받는 기쁨은 더하는 구매
+          </h3>
+          <p class="activeGreen_modal_desc">
+            이왕 시야할 물건이라면 그린 라벨이 붙은 물건이 더 의미있죠. 네오톡
+            선물하기에서 #그린선물을 테그를 확인해보세요. 환경에 이로운 인증이
+            확인된 제품에만 표시하고 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            그린선물로 뜨인 나라 네오메이커스, 쇼핑하기 등에서는 환경을 고민하는
+            이용자들을 위해 제품 정보에나 양한 '그린라벨'을 표기하고 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오톡 선물하기 # 그린선물 제품 라벨: 무농약농산물, 유기농산물,
+            유기농식품, 저녹약농산물, 무항생제 축산물, 친환경 수산물 품질인증,
+            유기가공식품 인증, Evo Vegan Label, The Vegan Trademark 총 9개
+          </p>
+          <div class="activeGreen_modal_stats">
+            <div class="stat_item">
+              <strong>2,894,364건</strong>
+              <p>
+                네오톡 선물하기 및 메이커스의 그린 라벨<br />
+                2023년도 총 구매 건수
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 자연보존 모달 -->
+        <div
+          class="activeGreen_modal_inner"
+          data-modal-content="nature"
+          style="display: none"
+        >
+          <h3 class="activeGreen_modal_title">
+            나무 심기로<br />지역탄소 순환에 기여합니다
+          </h3>
+          <p class="activeGreen_modal_desc">
+            네오는 다양한 환경 캠페인을 통해 이용자의 참여만큼 다양한 환경
+            파트너들과 숲 기금을 조성하고, 도심, 분쟁 접경 지역, 바다 인근,
+            산불피해지 등 다양한 곳에 나무를 심고 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오같이가치에서는 매년 환경의 날을 맞아 환경 캠페인을 열고 실천
+            인증에 참여한 수만큼 숲 조성 기금을 기부해 나무를 심고 있습니다.
+            사단법인 평화의숲과 함께 2022년에는 연천 지역에 1,026그루를
+            식재하였고, 2024년에는 춘천 지역에 700여 그루를 식재할 예정입니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오페이는 전자문서 전환 캠페인을 통해 조성한 기부금으로
+            산불피해지에 나무를 식재하였습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            네오메이커스는 사용자 구매가 발생할 때마다 환경기금인 에코씨드를
+            적립하고 그중 일부를 기부해 사단법인 생명의숲과 함께 도심과 바다
+            인근에 나무를 심고 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            멜론 ‘숲;트리밍’은 응원하는 아티스트의 이름으로 숲을 조성하는 친환경
+            프로젝트입니다. 멜론 정기결제권을 이용하는 동안 ‘숲;트리밍’
+            페이지에서 좋아하는 아티스트 이름을 선택만 해두면, 매월 결제금액의
+            2%가 자동으로 적립되고, 이는 서울환경연합으로 기부해 숲을
+            조성합니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            나무는 자랄수록 탄소 흡수량이 더 늘어납니다. 네오는 이용자들의 환경
+            저감 마음 만큼 나무를 지키고, 심으면서 지구의 탄소 순환에 기여해
+            나가겠습니다.
+          </p>
+          <div class="activeGreen_modal_stats">
+            <div class="stat_item">
+              <strong>6,538그루</strong>
+              <p>네오와 사용자와 함께<br />2023년 심은 나무 수</p>
+            </div>
+            <div class="stat_item">
+              <strong>4억 1,200만원</strong>
+              <p>2023년 사용자 참여금만큼<br />네오가 조성한 숲 기금</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 생물다양성 모달 -->
+        <div class="activeGreen_modal_inner" data-modal-content="biodiversity">
+          <h3 class="activeGreen_modal_title">
+            이용자와 함께 조성하는<br />생물다양성 기금 조성
+          </h3>
+          <p class="activeGreen_modal_desc">
+            네오는 지역사회 생물다양성 보호 및 산림 재생을 위해 다양한 이용자
+            참여형 활동을 추진하고 있습니다.
+          </p>
+          <div class="activeGreen_modal_subtitle_wrap">
+            <h4 class="activeGreen_modal_subtitle">
+              네오페이까지 2023 생물다양성 기금액<br /><strong
+                class="modal_amount"
+                >총 1억 3,202만원</strong
+              >
+            </h4>
+            <p class="modal_amount_desc">
+              이용자 기부금 5천 616만원 | 네오 기부금 7천 585만원
+            </p>
+          </div>
+          <p class="activeGreen_modal_desc">
+            네오의 대표적인 모금 플랫폼인 네오같이가치를 통해 다양한 단체가 해양
+            환경 보호 및 바다 생태계 보전, 동식물 보호를 위한 모금을 운영하고
+            있습니다. 네오는 이용자가 해당 모금에 댓글을 쓰거나 공유하는 만큼
+            대신 기부하고 있습니다.
+          </p>
+          <p class="activeGreen_modal_desc">
+            또 매년 환경의 날을 맞아 그린 디지털 캠페인을 통해이용자들이 실천
+            인증한 만큼 네오가 숲 조성 기금을 모아 나무를 식재하고 있습니다.
+          </p>
+          <div class="activeGreen_modal_subtitle_wrap">
+            <h4 class="activeGreen_modal_subtitle">
+              네오메이커스 에코씨드 2023년 적립액<br /><strong
+                class="modal_amount"
+                >총 4억 6,310만원</strong
+              >
+            </h4>
+          </div>
+          <p class="activeGreen_modal_desc">
+            네오메이커스의 에코씨드는 이용자가 주문할 때마다 수익금으로 마련하는
+            임팩트 기금입니다. 모인 에코씨드는 해양 쓰레기 정화, 미세 먼지 방지
+            숲 조성 등 지구를 돕는 활동에 쓰입니다.
+          </p>
+          <div class="activeGreen_modal_subtitle_wrap">
+            <h4 class="activeGreen_modal_subtitle">
+              네오메이커스 2023년 세계동물의날 기금<br /><strong
+                class="modal_amount"
+                >총 3천 200만원</strong
+              >
+            </h4>
+          </div>
+          <p class="activeGreen_modal_desc">
+            네오메이커스는 세계 동물의 날을 맞아 ‘꿀벌’을 주제로 다양한 굿즈를
+            제작해 판매하고, 판매 수익금 전액을 멸종위기 동물 보호를 위해
+            세계자연기금(WWF)에 기부하였습니다.
+          </p>
+        </div>
+      </div>
     </div>
     <!-- 모달 끝 -->
     <footer class="activeGreen_footer">
-        <div class="activeGreen_footer_inner">
-            <!-- 푸터 메뉴 -->
-            <div class="activeGreen_footer_menu">
-                <!-- 첫번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">오늘의 네오</h3>
-                    <ul>
-                        <li><a href="#">네오 플랫폼 다운로드</a></li>
-                        <li><a href="#">네오에이전시</a></li>
-                        <li><a href="#">#네오 이모티콘샵</a></li>
-                        <li><a href="#">#네오몰</a></li>
-                        <li><a href="#">#지속가능성</a></li>
-                        <li><a href="#">#개발자도구</a></li>
-                    </ul>
-                </div>
+      <div class="activeGreen_footer_inner">
+        <!-- 푸터 메뉴 -->
+        <div class="activeGreen_footer_menu">
+          <!-- 첫번째 컬럼 -->
+          <div class="activeGreen_footer_column">
+            <h3 class="activeGreen_footer_title">오늘의 네오</h3>
+            <ul>
+              <li><a href="#">네오 플랫폼 다운로드</a></li>
+              <li><a href="#">네오에이전시</a></li>
+              <li><a href="#">#네오 이모티콘샵</a></li>
+              <li><a href="#">#네오몰</a></li>
+              <li><a href="#">#지속가능성</a></li>
+              <li><a href="#">#개발자도구</a></li>
+            </ul>
+          </div>
 
-                <!-- 두번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">네오 그룹의 서비스</h3>
-                    <ul>
-                        <li><a href="#">커뮤니케이션</a></li>
-                        <li><a href="#">일상편의</a></li>
-                        <li><a href="#">비즈니스</a></li>
-                        <li><a href="#">쇼핑</a></li>
-                        <li><a href="#">엔터테인먼트</a></li>
-                        <li><a href="#">업데이트</a></li>
-                    </ul>
-                </div>
+          <!-- 두번째 컬럼 -->
+          <div class="activeGreen_footer_column">
+            <h3 class="activeGreen_footer_title">네오 그룹의 서비스</h3>
+            <ul>
+              <li><a href="#">커뮤니케이션</a></li>
+              <li><a href="#">일상편의</a></li>
+              <li><a href="#">비즈니스</a></li>
+              <li><a href="#">쇼핑</a></li>
+              <li><a href="#">엔터테인먼트</a></li>
+              <li><a href="#">업데이트</a></li>
+            </ul>
+          </div>
 
-                <!-- 세번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">그룹</h3>
-                    <ul>
-                        <li><a href="#">네오</a></li>
-                        <li><a href="#">네오페이</a></li>
-                        <li><a href="#">네오뱅크</a></li>
-                        <li><a href="#">네오모빌리티</a></li>
-                        <li><a href="#">네오스타일</a></li>
-                        <li><a href="#">네오엔터테인먼트</a></li>
-                    </ul>
-                </div>
+          <!-- 세번째 컬럼 -->
+          <div class="activeGreen_footer_column">
+            <h3 class="activeGreen_footer_title">그룹</h3>
+            <ul>
+              <li><a href="#">네오</a></li>
+              <li><a href="#">네오페이</a></li>
+              <li><a href="#">네오뱅크</a></li>
+              <li><a href="#">네오모빌리티</a></li>
+              <li><a href="#">네오스타일</a></li>
+              <li><a href="#">네오엔터테인먼트</a></li>
+            </ul>
+          </div>
 
-                <!-- 네번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">IR</h3>
-                    <ul>
-                        <li><a href="#">기업지배구조</a></li>
-                        <li><a href="#">주가정보</a></li>
-                        <li><a href="#">재무정보</a></li>
-                        <li><a href="#">IR행사</a></li>
-                        <li><a href="#">공시정보</a></li>
-                        <li><a href="#">공고</a></li>
-                    </ul>
-                </div>
+          <!-- 네번째 컬럼 -->
+          <div class="activeGreen_footer_column">
+            <h3 class="activeGreen_footer_title">IR</h3>
+            <ul>
+              <li><a href="#">기업지배구조</a></li>
+              <li><a href="#">주가정보</a></li>
+              <li><a href="#">재무정보</a></li>
+              <li><a href="#">IR행사</a></li>
+              <li><a href="#">공시정보</a></li>
+              <li><a href="#">공고</a></li>
+            </ul>
+          </div>
 
-                <!-- 다섯번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">계정 및 지원</h3>
-                    <ul>
-                        <li><a href="#">네오계정</a></li>
-                        <li><a href="#">네오 프라이버시</a></li>
-                        <li><a href="#">네오 고객센터</a></li>
-                        <li><a href="#">다음 고객센터</a></li>
-                        <li><a href="#">커머스 고객센터</a></li>
-                        <li><a href="#">인재영입</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 하단 링크 -->
-            <div class="activeGreen_footer_links">
-                <a href="#">이용약관</a>
-                <a href="#">위치정보 이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">운영정책 및 법령</a>
-                <a href="#">접근성 안내</a>
-                <a href="#">브랜드보호정책</a>
-                <a href="#">권리침해신고안내</a>
-                <a href="#">공지사항</a>
-                <a href="#">사이버윤리실</a>
-                <a href="#">Contact Us</a>
-            </div>
-
-            <!-- 저작권 -->
-            <p class="activeGreen_footer_copyright">© Neo Corp. All rights reserved.</p>
+          <!-- 다섯번째 컬럼 -->
+          <div class="activeGreen_footer_column">
+            <h3 class="activeGreen_footer_title">계정 및 지원</h3>
+            <ul>
+              <li><a href="#">네오계정</a></li>
+              <li><a href="#">네오 프라이버시</a></li>
+              <li><a href="#">네오 고객센터</a></li>
+              <li><a href="#">다음 고객센터</a></li>
+              <li><a href="#">커머스 고객센터</a></li>
+              <li><a href="#">인재영입</a></li>
+            </ul>
+          </div>
         </div>
+
+        <!-- 하단 링크 -->
+        <div class="activeGreen_footer_links">
+          <a href="#">이용약관</a>
+          <a href="#">위치정보 이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">운영정책 및 법령</a>
+          <a href="#">접근성 안내</a>
+          <a href="#">브랜드보호정책</a>
+          <a href="#">권리침해신고안내</a>
+          <a href="#">공지사항</a>
+          <a href="#">사이버윤리실</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <!-- 저작권 -->
+        <p class="activeGreen_footer_copyright">
+          © Neo Corp. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script src="../common/header/js/header.js"></script>
     <script src="../common/footer/js/footer.js"></script>
     <script src="./js/activeGreen.js"></script>
-</body>
-
+  </body>
 </html>

@@ -1,279 +1,270 @@
 .service_wrap {
-    max-width: 90%;
-    margin: 50px auto 90px;
+  max-width: 90%;
+  margin: 50px auto 90px;
 }
 
 /* 상단 영역 */
 .service_top {
-    text-align: start;
-    margin-bottom: 40px;
+  text-align: start;
+  margin-bottom: 40px;
 }
 
 .service_title_area {
-    display: flex;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .service_icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
 }
 
 .service_title {
-    font-size: 53px;
-    font-weight: bold;
-    color: #000;
+  font-size: 53px;
+  font-weight: bold;
+  color: #000;
 }
 
 .service_subtitle {
-    display: block;
-    margin-top: -5px;
-    font-weight: 400;
-    font-size: 36px;
+  display: block;
+  margin-top: -5px;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 /* 탭 메뉴 */
 .service_tab_wrap {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .service_tab_inner {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 20px;
 }
 
 .service_tab_btn {
-    border: none;
-    border-radius: 30px;
-    color: #666;
-    background: #f3f3f3;
-    cursor: pointer;
-    white-space: nowrap;
-    padding: 12px 24px;
-    font-size: 17px;
-    line-height: 27px;
-    letter-spacing: -.5px;
-    transition: all 0.2s ease;
+  border: none;
+  border-radius: 30px;
+  color: #194aa6;
+  background: #e8f3ff;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 12px 24px;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  transition: all 0.2s ease;
 }
 
 .service_tab_btn.active {
-    color: #fff;
-    background: #000;
-    font-weight: 500;
+  color: #fff;
+  background: #1957c2;
+  font-weight: 500;
 }
 
 .service_tab_btn.active::after {
-    display: none;
+  display: none;
 }
 
 .service_tab_inner::-webkit-scrollbar {
-    height: 0;
-    display: none;
+  height: 0;
+  display: none;
 }
 
 /* 카드 스타일 */
 .service_content {
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
 .service_content.active {
-    display: grid;
+  display: grid;
 }
 
 .service_card {
-    box-sizing: border-box;
-    background: #f3f3f3;
-    position: relative;
-    border-radius: 16px;
-    padding: 32px 32px 0;
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 450px;
+  box-sizing: border-box;
+  background: #f3f3f3;
+  position: relative;
+  border-radius: 16px;
+  padding: 32px 32px 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
 }
 
 .service_card_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .service_card_info {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .service_card_info img {
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
-    vertical-align: top;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  vertical-align: top;
 }
 
 .service_card_logo {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .service_card_category {
-    display: inline-block;
-    position: relative;
-    height: 36px;
-    padding: 0 12px;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 36px;
-    letter-spacing: -.2px;
-    color: #000;
-    background-color: #fff;
-    vertical-align: top;
-
+  display: inline-block;
+  position: relative;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+  color: #000;
+  background-color: #fff;
+  vertical-align: top;
 }
 
 .service_card_title {
-    font-size: 26px;
-    line-height: 1.4;
-    margin-bottom: 12px;
-    word-break: keep-all;
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  word-break: keep-all;
 }
 
 .service_card_tag {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .service_card_img_wrap {
-    margin: 0 -35px -15px;
-    border-radius: 0 0 16px 16px;
-    overflow: hidden;
+  margin: 0 -35px -15px;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
 }
 
 .service_card_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* 이미지 크기 비율 유지하며 꽉 채우기 */
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 이미지 크기 비율 유지하며 꽉 채우기 */
+  display: block;
 }
 
 .service_card_more {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: #999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 /* 반응형 */
 @media screen and (max-width: 1024px) {
-    .service_content {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .service_content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .service_wrap {
-        margin: 30px auto 70px;
-    }
+  .service_wrap {
+    margin: 30px auto 70px;
+  }
 }
 
 /* 태블릿 (768px 이하) */
 @media screen and (max-width: 768px) {
+  .service_title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
 
+  .service_subtitle {
+    font-size: 20px;
+  }
 
-    .service_title {
-        font-size: 36px;
-        margin-bottom: 10px;
-    }
+  .service_tab_btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 
-    .service_subtitle {
-        font-size: 20px;
-    }
+  .service_content {
+    gap: 20px;
+  }
 
-    .service_tab_btn {
-        font-size: 14px;
-        padding: 10px 16px;
-    }
+  .service_card {
+    padding: 24px 24px 0;
+    height: 350px;
+  }
 
-    .service_content {
-        gap: 20px;
-    }
+  .service_card_title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
-    .service_card {
-        padding: 24px 24px 0;
-        height: 350px;
-    }
-
-    .service_card_title {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-
-    .service_card_tag {
-        font-size: 14px;
-    }
-
-
+  .service_card_tag {
+    font-size: 14px;
+  }
 }
 
 /* 모바일 (480px 이하) */
 @media screen and (max-width: 480px) {
-    .service_wrap {
-        margin: 10px auto 50px;
-    }
+  .service_wrap {
+    margin: 10px auto 50px;
+  }
 
-    .service_title {
-        font-size: 28px;
-        margin-bottom: 5px;
-    }
+  .service_title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
 
-    .service_subtitle {
-        font-size: 16px;
-    }
+  .service_subtitle {
+    font-size: 16px;
+  }
 
-    .service_tab_btn {
-        font-size: 12px;
-        padding: 8px 12px;
-    }
+  .service_tab_btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 
-    .service_content {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+  .service_content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
-    .service_card {
-        padding: 16px 16px 0;
-        height: auto;
-    }
+  .service_card {
+    padding: 16px 16px 0;
+    height: auto;
+  }
 
-    .service_card_title {
-        font-size: 18px;
-        line-height: 1.3;
-    }
+  .service_card_title {
+    font-size: 18px;
+    line-height: 1.3;
+  }
 
-    .service_card_tag {
-        font-size: 12px;
-    }
+  .service_card_tag {
+    font-size: 12px;
+  }
 
-    .service_card_img {
-        object-fit: contain;
-    }
-
-
+  .service_card_img {
+    object-fit: contain;
+  }
 }
