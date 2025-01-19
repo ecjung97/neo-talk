@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-    min-width: 568px;
 }
 
 .banner {
@@ -108,10 +107,7 @@
   text-align: center;
   line-height: 1.6;
   margin-top: 8px;
-
-  line-height: 1.6;
-  margin-top: 8px;
-  color: #616161;
+font-size: 30px;
 }
 
 .banner.resize .banner-list {
@@ -307,7 +303,6 @@
   text-align: left;
   font-size: 52px;
   font-weight: 400;
-  margin: 0px 242px;
   display: flex;
   justify-content: space-between;
 }
@@ -428,7 +423,7 @@
 }
 
 .carousel {
-  max-width: 100%;
+  /* max-width: 100%; */
   overflow: hidden;
 }
 
@@ -963,6 +958,9 @@ a {
 }
 
 @media screen and (max-width: 1902px) {
+  .title-container {
+    width: 1328px;
+  }
   .main-container {
     margin-top: 120px;
   }
@@ -1033,8 +1031,11 @@ a {
     margin-top: 80px;
     max-width: 948px;
   }
+  .title-container {
+     max-width: 948px;
+  }
 
-  .carousel {
+ .carousel {
     max-width: 100%;
   }
   .box {
@@ -1109,13 +1110,24 @@ a {
     display: none;
   
   }
+  .title-container {
+    width: 1328px;
+  }
  
 }
 @media screen and (max-width: 1023px) {
+  .title-container {
+    width: 948px;
+
+  }
+ 
   .main-container {
     max-width: 712px;
   }
-  .carousel {
+  .title-container {
+    max-width: 712px;
+ }
+ .carousel {
     max-width: 100%;
   }
   .box {
@@ -1199,13 +1211,20 @@ a {
   padding: 0px;
 }
 
+#mainTitleArea .subTxt {
+font-size: 20px;
+}
 }
 
 @media screen and (max-width: 767px) {
   .main-container {
     max-width: 384px;
   }
-  .carousel {
+
+  .title-container {
+    max-width: 384px;
+ }
+ .carousel {
     max-width: 100%;
   }
   .boxs-container {
