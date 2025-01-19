@@ -37,14 +37,14 @@
    if (!isSliding) {
      // 슬라이드 시작
      isSliding = true;
-     button.textContent = '멈춤';
+  
      // 중복 실행 방지 위해 기존 프레임 취소
      cancelAnimationFrame(animationFrameId);
      animationFrameId = requestAnimationFrame(animate);
    } else {
      // 슬라이드 멈춤
      isSliding = false;
-     button.textContent = '시작';
+  
      // 멈추면 다음 프레임에서 animate()가 종료됨
      cancelAnimationFrame(animationFrameId);
    }

@@ -20,131 +20,252 @@
     <div class="common_flex">
       <header class="header">
         <nav class="activeGreen_nav">
-            <div class="activeGreen_nav_inner">
-                <a href="/index.html" class="activeGreen_nav_logo">Neo</a>
-
-                <div class="activeGreen_nav_menu">
-                    <div class="activeGreen_nav_menu">
-                        <a href="../../culture/culture.html" class="activeGreen_nav_item">네오의 문화</a>
-                        <a href="../../service/service.html" class="activeGreen_nav_item">서비스</a>
-                        <a href="../../projectRegular/projectRegular.html" class="activeGreen_nav_item">프로젝트 단골</a>
-                        <a href="../../activeGreen/activeGreen.html" class="activeGreen_nav_item">액티브 그린</a>
-                    </div>
-
-                </div>
-
-                <div class="activeGreen_nav_right">
-                    <!-- 검색 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon search_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                            <path d="M21 21L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </button>
-
-                    <!-- 지구본 아이콘 -->
-                    <button type="button" id="translateBtn" class="activeGreen_nav_icon globe_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
-                                stroke-width="2" />
-                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </button>
-
-                    <!-- 달 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon dark_mode_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-
-                    <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
-                    <button type="button" id="hamburgerBtn" class="activeGreen_nav_icon hamburger_icon" id="
-                        hamburgerBtn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </button>
-                </div>
+          <div class="activeGreen_nav_inner">
+            <a href="/index.html" class="activeGreen_nav_logo">Neo</a>
+  
+            <div class="activeGreen_nav_menu">
+              <div class="activeGreen_nav_menu">
+                <a href="../../culture/culture.html" class="activeGreen_nav_item"
+                  >네오의 문화</a
+                >
+                <a href="../../service/service.html" class="activeGreen_nav_item"
+                  >서비스</a
+                >
+                <a
+                  href="../../projectRegular/projectRegular.html"
+                  class="activeGreen_nav_item"
+                  >프로젝트 단골</a
+                >
+                <a
+                  href="../../activeGreen/activeGreen.html"
+                  class="activeGreen_nav_item"
+                  >액티브 그린</a
+                >
+              </div>
             </div>
+  
+            <div class="activeGreen_nav_right">
+              <!-- 검색 아이콘 -->
+              <button type="button" class="activeGreen_nav_icon search_icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M21 21L17 17"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+  
+              <!-- 지구본 아이콘 -->
+              <button
+                type="button"
+                id="translateBtn"
+                class="activeGreen_nav_icon globe_icon"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                  />
+                  <path d="M3 12H21" stroke="#195AA6" stroke-width="2" />
+                </svg>
+              </button>
+  
+              <!-- 달 아이콘 -->
+              <button type="button" class="activeGreen_nav_icon dark_mode_icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+  
+              <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
+              <button
+                type="button"
+                id="hamburgerBtn"
+                class="activeGreen_nav_icon hamburger_icon"
+                id="
+                              hamburgerBtn"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 12H21M3 6H21M3 18H21"
+                    stroke="#195AA6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </nav>
-
-
+  
         <!-- 반응형 사이드바 -->
         <div id="activeGreen_sidebar" class="activeGreen_sidebar">
-            <div class="activeGreen_sidebar_inner">
-                <div class="activeGreen_top_icons">
-                    <!-- 달 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-
-                    <!-- 지구본 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
-                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
-                                stroke-width="2" />
-                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
-                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
-                        </svg>
-                    </button>
-
-                    <!-- 닫기 아이콘 -->
-                    <button type="button" class="activeGreen_nav_icon activeGreen_sidebar_close">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="activeGreen_sidebar_menu">
-                    <a href="../../culture/culture.html" class="activeGreen_sidebar_item">
-                        <span>네오의 문화</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="#" class="activeGreen_sidebar_item">
-                        <span>서비스</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="../../projectRegular/projectRegular.html" class="activeGreen_sidebar_item">
-                        <span>프로젝트 단골</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-                    <a href="../../activeGreen/activeGreen.html" class="activeGreen_sidebar_item">
-                        <span>액티브 그린</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" />
-                        </svg>
-                    </a>
-
-                </div>
+          <div class="activeGreen_sidebar_inner">
+            <div class="activeGreen_top_icons">
+              <!-- 달 아이콘 -->
+              <button type="button" class="activeGreen_nav_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+  
+              <!-- 지구본 아이콘 -->
+              <button type="button" class="activeGreen_nav_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="9"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </button>
+  
+              <!-- 닫기 아이콘 -->
+              <button
+                type="button"
+                class="activeGreen_nav_icon activeGreen_sidebar_close"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M18 6L6 18M6 6L18 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
             </div>
+            <div class="activeGreen_sidebar_menu">
+              <a
+                href="../../culture/culture.html"
+                class="activeGreen_sidebar_item"
+              >
+                <span>네오의 문화</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="activeGreen_sidebar_item">
+                <span>서비스</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="../../projectRegular/projectRegular.html"
+                class="activeGreen_sidebar_item"
+              >
+                <span>프로젝트 단골</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="../../activeGreen/activeGreen.html"
+                class="activeGreen_sidebar_item"
+              >
+                <span>액티브 그린</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-
+  
         <!-- 사이드바 오버레이 -->
         <div id="sidebar_overlay" class="activeGreen_sidebar_overlay"></div>
-
-    </header>
+      </header>
       <div class="common_content">        
         <div class="banner">
             <div class="title-continer">
@@ -190,23 +311,23 @@
               <div id="mainTitleArea">
                 <h2 class="fontL">Life on LINE</h2>
                 <p class="subTxt">메신저 앱 그 이상의 경험을 제공합니다.
-                라인은 새로운 인프라 경험, 새로운 커뮤니케이션 경험을 모두에게 전달하고자 합니다.</p>
+              네오는 새로운 인프라 경험, 새로운 커뮤니케이션 경험을 모두에게 전달하고자 합니다.</p>
               </div>
         
     </div>
         <!-- 캐러셀 -->
-        <section class="main-container carousel "> 
-            <div class="title-container">
-              <h3 class="content-title">
-                <div>
-                  <span class="carousel-icon">!</span>
-                  <span>네오와 축적해 온 이야기들</span>
-                </div>
-                
-                <button class="carousel-control">슬라이드 시작</button>
-                
-              </h3>
+        <div class="title-container">
+          <h3 class="content-title">
+            <div>
+            
+              <span>네오와 축적해 온 이야기들</span>
             </div>
+            
+            <button class="carousel-control">슬라이드 시작</button>
+            
+          </h3>
+        </div>
+        <section class="main-container carousel "> 
             <section id="carouselStory" class="inner-main carousel-story">
                 <!-- <div class="slider-wrap" id="sliderWrap" style="transform: translateX(0)"> -->
               <ul class="list-story"  id="storyList">
@@ -767,7 +888,7 @@
         <div class="title-container">
           <h3 class="content-title">
             <div>
-              <span class="carousel-icon">!</span>
+            
               <span> 더 나은 세상을 만드는 네오 서비스</span>
             </div>
 
@@ -782,7 +903,7 @@
                 <span><img src="./image_main/cumuni1.png" alt="카카오톡"></span>
                 <span><img src="./image_main/cumuni2.png" alt="다음"></span>
                 <span><img src="./image_main/cumuni3.png" alt="카카오스토리"></span>
-                <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>
+                  <!-- <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>-->
               </div>
             </li>
             <li class="service-item">
@@ -791,7 +912,7 @@
                 <span><img src="./image_main/busi2.png" alt="채널"></span>
                 <span><img src="./image_main/busi3.png" alt="클라우드"></span>
                 <span><img src="./image_main/busi4.png" alt="아지트"></span>
-                <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>
+                  <!-- <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>-->
               </div>
             </li>
             <li class="service-item">
@@ -800,7 +921,7 @@
                 <span><img src="./image_main/convi1.png" alt="지도"></span>
                 <span><img src="./image_main/convi2.png" alt="T"></span>
                 <span><img src="./image_main/convi3.png" alt="뱅크"></span>
-                <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>
+                  <!-- <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>-->
               </div>
             </li>
             <li class="service-item">
@@ -809,7 +930,7 @@
                 <span><img src="./image_main/enter1.png" alt="웹툰"></span>
                 <span><img src="./image_main/enter2.png" alt="게임"></span>
                 <span><img src="./image_main/enter3.png" alt="멜론"></span>
-                <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>
+                  <!-- <span class="more-btn"><img src="./image_main/cumuni4.svg" alt="더보기 버튼"></span>-->
               </div>
             </li>
           </ul>
@@ -987,7 +1108,7 @@
             <div class="title-container">
                 <h3 class="content-title">
                     <div>
-                        <span class="carousel-icon">!</span>
+                      
                         <span> 약속과 책임</span>
                       </div>
                     
@@ -1046,7 +1167,7 @@
                 <div class="title-container">
                     <h3 class="content-title">
                         <div>
-                            <span class="carousel-icon">!</span>
+                          
                             <span> 무엇을 도와드릴까요?</span>
                           </div>
                         
@@ -1149,92 +1270,95 @@
       </div>
       <footer class="activeGreen_footer">
         <div class="activeGreen_footer_inner">
-            <!-- 푸터 메뉴 -->
-            <div class="activeGreen_footer_menu">
-                <!-- 첫번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">오늘의 네오</h3>
-                    <ul>
-                        <li><a href="#">네오 플랫폼 다운로드</a></li>
-                        <li><a href="#">네오에이전시</a></li>
-                        <li><a href="#">#네오 이모티콘샵</a></li>
-                        <li><a href="#">#네오몰</a></li>
-                        <li><a href="#">#지속가능성</a></li>
-                        <li><a href="#">#개발자도구</a></li>
-                    </ul>
-                </div>
-
-                <!-- 두번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">네오 그룹의 서비스</h3>
-                    <ul>
-                        <li><a href="#">커뮤니케이션</a></li>
-                        <li><a href="#">일상편의</a></li>
-                        <li><a href="#">비즈니스</a></li>
-                        <li><a href="#">쇼핑</a></li>
-                        <li><a href="#">엔터테인먼트</a></li>
-                        <li><a href="#">업데이트</a></li>
-                    </ul>
-                </div>
-
-                <!-- 세번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">그룹</h3>
-                    <ul>
-                        <li><a href="#">네오</a></li>
-                        <li><a href="#">네오페이</a></li>
-                        <li><a href="#">네오뱅크</a></li>
-                        <li><a href="#">네오모빌리티</a></li>
-                        <li><a href="#">네오스타일</a></li>
-                        <li><a href="#">네오엔터테인먼트</a></li>
-                    </ul>
-                </div>
-
-                <!-- 네번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">IR</h3>
-                    <ul>
-                        <li><a href="#">기업지배구조</a></li>
-                        <li><a href="#">주가정보</a></li>
-                        <li><a href="#">재무정보</a></li>
-                        <li><a href="#">IR행사</a></li>
-                        <li><a href="#">공시정보</a></li>
-                        <li><a href="#">공고</a></li>
-                    </ul>
-                </div>
-
-                <!-- 다섯번째 컬럼 -->
-                <div class="activeGreen_footer_column">
-                    <h3 class="activeGreen_footer_title">계정 및 지원</h3>
-                    <ul>
-                        <li><a href="#">네오계정</a></li>
-                        <li><a href="#">네오 프라이버시</a></li>
-                        <li><a href="#">네오 고객센터</a></li>
-                        <li><a href="#">다음 고객센터</a></li>
-                        <li><a href="#">커머스 고객센터</a></li>
-                        <li><a href="#">인재영입</a></li>
-                    </ul>
-                </div>
+          <!-- 푸터 메뉴 -->
+          <div class="activeGreen_footer_menu">
+            <!-- 첫번째 컬럼 -->
+            <div class="activeGreen_footer_column">
+              <h3 class="activeGreen_footer_title">오늘의 네오</h3>
+              <ul>
+                <li><a href="#">네오 플랫폼 다운로드</a></li>
+                <li><a href="#">네오에이전시</a></li>
+                <li><a href="#">#네오 이모티콘샵</a></li>
+                <li><a href="#">#네오몰</a></li>
+                <li><a href="#">#지속가능성</a></li>
+                <li><a href="#">#개발자도구</a></li>
+              </ul>
             </div>
-
-            <!-- 하단 링크 -->
-            <div class="activeGreen_footer_links">
-                <a href="#">이용약관</a>
-                <a href="#">위치정보 이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">운영정책 및 법령</a>
-                <a href="#">접근성 안내</a>
-                <a href="#">브랜드보호정책</a>
-                <a href="#">권리침해신고안내</a>
-                <a href="#">공지사항</a>
-                <a href="#">사이버윤리실</a>
-                <a href="#">Contact Us</a>
+  
+            <!-- 두번째 컬럼 -->
+            <div class="activeGreen_footer_column">
+              <h3 class="activeGreen_footer_title">네오 그룹의 서비스</h3>
+              <ul>
+                <li><a href="#">커뮤니케이션</a></li>
+                <li><a href="#">일상편의</a></li>
+                <li><a href="#">비즈니스</a></li>
+                <li><a href="#">쇼핑</a></li>
+                <li><a href="#">엔터테인먼트</a></li>
+                <li><a href="#">업데이트</a></li>
+              </ul>
             </div>
-
-            <!-- 저작권 -->
-            <p class="activeGreen_footer_copyright">© Neo Corp. All rights reserved.</p>
+  
+            <!-- 세번째 컬럼 -->
+            <div class="activeGreen_footer_column">
+              <h3 class="activeGreen_footer_title">그룹</h3>
+              <ul>
+                <li><a href="#">네오</a></li>
+                <li><a href="#">네오페이</a></li>
+                <li><a href="#">네오뱅크</a></li>
+                <li><a href="#">네오모빌리티</a></li>
+                <li><a href="#">네오스타일</a></li>
+                <li><a href="#">네오엔터테인먼트</a></li>
+              </ul>
+            </div>
+  
+            <!-- 네번째 컬럼 -->
+            <div class="activeGreen_footer_column">
+              <h3 class="activeGreen_footer_title">IR</h3>
+              <ul>
+                <li><a href="#">기업지배구조</a></li>
+                <li><a href="#">주가정보</a></li>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">IR행사</a></li>
+                <li><a href="#">공시정보</a></li>
+                <li><a href="#">공고</a></li>
+              </ul>
+            </div>
+  
+            <!-- 다섯번째 컬럼 -->
+            <div class="activeGreen_footer_column">
+              <h3 class="activeGreen_footer_title">계정 및 지원</h3>
+              <ul>
+                <li><a href="#">네오계정</a></li>
+                <li><a href="#">네오 프라이버시</a></li>
+                <li><a href="#">네오 고객센터</a></li>
+                <li><a href="#">다음 고객센터</a></li>
+                <li><a href="#">커머스 고객센터</a></li>
+                <li><a href="#">인재영입</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- 하단 링크 -->
+          <div class="activeGreen_footer_links">
+            <a href="#">이용약관</a>
+            <a href="#">위치정보 이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">운영정책 및 법령</a>
+            <a href="#">접근성 안내</a>
+            <a href="#">브랜드보호정책</a>
+            <a href="#">권리침해신고안내</a>
+            <a href="#">공지사항</a>
+            <a href="#">사이버윤리실</a>
+            <a href="#">Contact Us</a>
+          </div>
+  
+          <!-- 저작권 -->
+          <p class="activeGreen_footer_copyright">
+            © Neo Corp. All rights reserved.
+          </p>
         </div>
-    </footer>
+      </footer>
+  
     </div>
     <script src="./common/header/js/header.js"></script>
     <script src="./common/footer/js/footer.js"></script>
