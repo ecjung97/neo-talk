@@ -11,7 +11,135 @@
 </head>
 
 <body>
-    <div class="header">header</div>
+    <header class="header">
+        <nav class="activeGreen_nav">
+            <div class="activeGreen_nav_inner">
+                <a href="../../randing/randing.html" class="activeGreen_nav_logo">Neo</a>
+
+                <div class="activeGreen_nav_menu">
+                    <div class="activeGreen_nav_menu">
+                        <a href="../../culture/culture.html" class="activeGreen_nav_item">네오의 문화</a>
+                        <a href="../../service/service.html" class="activeGreen_nav_item">서비스</a>
+                        <a href="../../projectRegular/projectRegular.html" class="activeGreen_nav_item">프로젝트 단골</a>
+                        <a href="../../activeGreen/activeGreen.html" class="activeGreen_nav_item">액티브 그린</a>
+                    </div>
+
+                </div>
+
+                <div class="activeGreen_nav_right">
+                    <!-- 검색 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon search_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M21 21L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 지구본 아이콘 -->
+                    <button type="button" id="translateBtn" class="activeGreen_nav_icon globe_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
+                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <!-- 달 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon dark_mode_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 햄버거 메뉴 아이콘 (1024px 이하에서만 보임) -->
+                    <button type="button" id="hamburgerBtn" class="activeGreen_nav_icon hamburger_icon" id="
+                        hamburgerBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- 반응형 사이드바 -->
+        <div id="activeGreen_sidebar" class="activeGreen_sidebar">
+            <div class="activeGreen_sidebar_inner">
+                <div class="activeGreen_top_icons">
+                    <!-- 달 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <!-- 지구본 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+                            <path d="M12 3C14.5 6 15 9 15 12C15 15 14.5 18 12 21" stroke="currentColor"
+                                stroke-width="2" />
+                            <path d="M12 3C9.5 6 9 9 9 12C9 15 9.5 18 12 21" stroke="currentColor" stroke-width="2" />
+                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </button>
+
+                    <!-- 닫기 아이콘 -->
+                    <button type="button" class="activeGreen_nav_icon activeGreen_sidebar_close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="activeGreen_sidebar_menu">
+                    <a href="../../culture/culture.html" class="activeGreen_sidebar_item">
+                        <span>네오의 문화</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="#" class="activeGreen_sidebar_item">
+                        <span>서비스</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="../../projectRegular/projectRegular.html" class="activeGreen_sidebar_item">
+                        <span>프로젝트 단골</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <a href="../../activeGreen/activeGreen.html" class="activeGreen_sidebar_item">
+                        <span>액티브 그린</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 사이드바 오버레이 -->
+        <div id="sidebar_overlay" class="activeGreen_sidebar_overlay"></div>
+
+    </header>
+
+    <script src="./js/header.js"></script>
 </body>
 
 </html>
