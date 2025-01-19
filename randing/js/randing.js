@@ -65,36 +65,22 @@
 //   }
 // });
 
+
 window.addEventListener("scroll", () => {
   const banner = document.querySelector(".banner");
   const titleContainer = document.querySelector(".title-continer");
-  const scrollNavWrap = document.querySelector(".scrollNavWrap");
   const bannerHeight = banner.offsetHeight; // 배너 높이
 
   // 스크롤 위치가 배너 높이의 10% 이상일 때 변경
   if (window.scrollY > bannerHeight * 0.1) {
     banner.classList.add("resize");
-
-    // 타이틀 컨테이너 숨김
-    titleContainer.style.opacity = "0";
-    titleContainer.style.transform = "translateY(-20px)";
+    titleContainer.style.opacity = "0"; // 투명도 설정
+    titleContainer.style.transform = "translateY(-20px)"; // 위로 이동
     titleContainer.style.transition = "opacity 0.3s ease, transform 0.3s ease";
-
-    // 스크롤 내비게이션 숨김
-    scrollNavWrap.style.opacity = "0";
-    scrollNavWrap.style.transform = "translateY(-20px)";
-    scrollNavWrap.style.transition = "opacity 0.3s ease, transform 0.3s ease";
   } else {
     banner.classList.remove("resize");
-
-    // 타이틀 컨테이너 표시
-    titleContainer.style.opacity = "1";
+    titleContainer.style.opacity = "1"; // 다시 나타남
     titleContainer.style.transform = "translateY(0)";
     titleContainer.style.transition = "opacity 0.3s ease, transform 0.3s ease";
-
-    // 스크롤 내비게이션 표시
-    scrollNavWrap.style.opacity = "1";
-    scrollNavWrap.style.transform = "translateY(0)";
-    scrollNavWrap.style.transition = "opacity 0.3s ease, transform 0.3s ease";
   }
 });
