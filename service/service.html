@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네오 서비스</title>
+
+    <script src="../includeHTML.js"></script>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="../common/header/header.css">
+    <link rel="stylesheet" href="../common/footer/footer.css">
+</head>
+
+<body>
+    <div include-html="../common/header/header.html"></div>
+
+    <main class="service_wrap">
+        <!-- 헤더 영역 -->
+        <div class="service_top">
+            <div class="service_title_area">
+                <img src="./assets/image/ico_tit_service.gif" alt="서비스 아이콘" class="service_icon">
+                <h1 class="service_title">서비스</h1>
+            </div>
+            <h2 class="service_subtitle">더 나은 세상을 만드는 네오</h2>
+        </div>
+
+        <!-- 탭 메뉴 -->
+        <div class="service_tab_wrap">
+            <div class="service_tab_inner">
+                <button class="service_tab_btn active" data-tab="all">전체</button>
+                <button class="service_tab_btn" data-tab="communication">커뮤니케이션</button>
+                <button class="service_tab_btn" data-tab="life">일상 편의</button>
+                <button class="service_tab_btn" data-tab="business">비즈니스</button>
+                <button class="service_tab_btn" data-tab="shopping">쇼핑</button>
+                <button class="service_tab_btn" data-tab="entertainment">엔터테인먼트</button>
+            </div>
+        </div>
+
+        <!-- 컨텐츠 영역 -->
+        <div class="service_content_wrap">
+            <!-- 전체 탭 -->
+            <div class="service_content active" data-content="all"> </div>
+
+
+            <!-- 커뮤니케이션 탭 -->
+            <div class="service_content" data-content="communication">
+                <!-- 첫 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">사람과 세상을 향한<br>모든 연결의 시작, 네오톡</h3>
+                    <div class="service_card_tag">#네오톡다운로드</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication1.webp" alt="네오톡 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 두 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">세상의 모든 관심,<br>네오톡 오픈채팅</h3>
+                    <div class="service_card_tag">#관심사 #오픈채팅 #오픈채팅Lite</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication2.webp" alt="네오톡 오픈채팅 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 세 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">모두의 네오톡을 더 가깝고 안전하게, 네오톡설명서</h3>
+                    <div class="service_card_tag">#라이프 #네오톡 #커뮤니케이션</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication3.webp" alt="네오톡설명서 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 네 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">우리 모두, 저마다의 Story</h3>
+                    <div class="service_card_tag">#브런치스토리 #스토리 #네오스토리</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication4.webp" alt="네오스토리 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">말로 하는 오픈채팅, 보이스룸</h3>
+                    <div class="service_card_tag">#보이스룸 #오픈채팅</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication5.webp" alt="보이스룸 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 여섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡" class="service_card_logo">
+                            <span class="service_card_category">커뮤니케이션</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">톡으로 하는 똑소리 나는 일정관리, 톡캘린더</h3>
+                    <div class="service_card_tag">#일정관리 #친구추천 #네오톡알림</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Communication6.webp" alt="톡캘린더 이미지" class="service_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 일상 편의 탭 -->
+            <div class="service_content" data-content="life">
+                <!-- 첫 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오뱅크" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">같지만 다른 은행, 네오뱅크</h3>
+                    <div class="service_card_tag">#같지만다른은행 #은행 #인터넷전문은행</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience1.webp" alt="네오뱅크 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 두 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오맵" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">당신을 좋은 곳으로<br>이끌어 줄 지도, 네오맵</h3>
+                    <div class="service_card_tag">#모빌리티 #지도 #네오맵 #네오버스</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience2.webp" alt="네오맵 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 세 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오T" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">모든 이동을 위한, 네오T</h3>
+                    <div class="service_card_tag">#maas #모빌리티 #이동플랫폼 #네오T</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience3.webp" alt="네오T 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 네 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오내비" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">정확하고 즐거운<br>운전 도우미, 네오내비</h3>
+                    <div class="service_card_tag">#길안내 #내비게이션 #내차관리 #모빌리티</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience4.webp" alt="네오내비 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="헤이네오" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">말 한마디로 편리해지는 일상,<br>헤이네오</h3>
+                    <div class="service_card_tag">#내비게이션 #디스플레이 #모빌리티 #스마트홈</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience5.webp" alt="헤이네오 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 여섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오페이" class="service_card_logo">
+                            <span class="service_card_category">일상 편의</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">마음놓고 금융하다, 네오페이</h3>
+                    <div class="service_card_tag">#결제 #금융 #송금 #네오페이 #테크핀</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Convenience6.webp" alt="네오페이 이미지" class="service_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 비즈니스 탭 -->
+            <div class="service_content" data-content="business">
+                <!-- 첫 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오뱅크" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">같지만 다른 은행, 네오뱅크</h3>
+                    <div class="service_card_tag">#같지만다른은행 #은행 #인터넷전문은행</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service1.webp" alt="네오뱅크 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 두 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오맵" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">당신을 좋은 곳으로<br>이끌어 줄 지도, 네오맵</h3>
+                    <div class="service_card_tag">#모빌리티 #지도 #네오맵 #네오버스</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service2.webp" alt="네오맵 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 세 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오T" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">모든 이동을 위한, 네오T</h3>
+                    <div class="service_card_tag">#maas #모빌리티 #이동플랫폼 #네오T</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service3.webp" alt="네오T 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 네 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오내비" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">정확하고 즐거운<br>운전 도우미, 네오내비</h3>
+                    <div class="service_card_tag">#길안내 #내비게이션 #내차관리 #모빌리티</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service4.webp" alt="네오내비 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="헤이네오" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">말 한마디로 편리해지는 일상,<br>헤이네오</h3>
+                    <div class="service_card_tag">#내비게이션 #디스플레이 #모빌리티 #스마트홈</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service5.webp" alt="헤이네오 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 여섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오페이" class="service_card_logo">
+                            <span class="service_card_category">비즈니스</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">마음놓고 금융하다, 네오페이</h3>
+                    <div class="service_card_tag">#결제 #금융 #송금 #네오페이 #테크핀</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/service6.webp" alt="네오페이 이미지" class="service_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 쇼핑 탭 -->
+            <div class="service_content" data-content="shopping">
+                <!-- 첫 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오톡 선물하기" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">마음을 전하는 가장 쉬운 방법, 네오톡 선물하기</h3>
+                    <div class="service_card_tag">#b2b선물 #비즈니스선물 #선물하기 #네오톡선물하기</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping1.webp" alt="네오톡 선물하기 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 두 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="톡딜" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">쇼핑을 톡하다! 톡딜</h3>
+                    <div class="service_card_tag">#커머스 #톡딜 #톡스토어</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping2.webp" alt="톡딜 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 세 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오쇼핑라이브" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">여러분의 참여로 완성되는<br>네오쇼핑라이브</h3>
+                    <div class="service_card_tag">#라이브커머스 #네오스튜디오 #네오쇼핑라이브</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping3.webp" alt="네오쇼핑라이브 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 네 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="지그재그" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">나를 표현하는 쇼핑, 지그재그</h3>
+                    <div class="service_card_tag">#개인화추천 #쇼핑 #스타일 #지그재그 #패션</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping4.webp" alt="지그재그 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오메이커스" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">더 나은 내일을 만드는 주문,<br>네오메이커스</h3>
+                    <div class="service_card_tag">#공동주문 #주문제작 #네오메이커스 #커머스</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping5.webp" alt="네오메이커스 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 여섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="쇼핑하우" class="service_card_logo">
+                            <span class="service_card_category">쇼핑</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">현명한 쇼핑 생활의 시작,<br>쇼핑하우</h3>
+                    <div class="service_card_tag">#쇼핑 #쇼핑하우</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Shopping6.webp" alt="쇼핑하우 이미지" class="service_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 엔터테이먼트 탭 -->
+            <div class="service_content" data-content="entertainment">
+                <!-- 첫 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오페이지" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">세상 모든 이야기를 담다,<br>네오페이지</h3>
+                    <div class="service_card_tag">#기다리면무료 #엔터테인먼트 #웹소설 #웹툰 #네오페이지</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment1.webp" alt="네오페이지 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 두 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오TV" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">오리지널 콘텐츠와 라이브를 즐길 수 있는, 네오TV</h3>
+                    <div class="service_card_tag">#드라마 #예능 #오리지널 #네오TV</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment2.webp" alt="네오TV 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 세 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오프렌즈" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">Korea No.1 캐릭터, 네오프렌즈</h3>
+                    <div class="service_card_tag">#라인업 #레플리카네오프렌즈 #이모티콘 #혼식이 #네오프렌즈</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment3.webp" alt="네오프렌즈 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 네 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="네오웹툰" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">세상에 없던 세상, 네오웹툰</h3>
+                    <div class="service_card_tag">#엔터테인먼트 #웹툰 #네오웹툰 #콘텐츠</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment4.webp" alt="네오웹툰 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 다섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="멜론" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">내가 좋아할 음악들만, 멜론</h3>
+                    <div class="service_card_tag">#K팝 #mma #멜론 #멜론차트 #뮤직앱</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment5.webp" alt="멜론 이미지" class="service_card_img">
+                    </div>
+                </div>
+
+                <!-- 여섯 번째 카드 -->
+                <div class="service_card">
+                    <div class="service_card_header">
+                        <div class="service_card_info">
+                            <img src="./assets/image/light-small.webp" alt="니니즈" class="service_card_logo">
+                            <span class="service_card_category">엔터테인먼트</span>
+                        </div>
+                    </div>
+                    <h3 class="service_card_title">새로운 세대에게 사랑받는,<br>니니즈</h3>
+                    <div class="service_card_tag">#니니즈 #니니프렌즈 #조르디 #조르디24시 #네오니니즈</div>
+                    <div class="service_card_img_wrap">
+                        <img src="./assets/image/Entertainment6.webp" alt="니니즈 이미지" class="service_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <div include-html="../common/footer/footer.html"></div>
+
+    <script src="./js/service.js"></script>
+</body>
+
+<script>
+    includeHTML();</script>
+
+
+</html>
