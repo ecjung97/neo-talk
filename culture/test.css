@@ -1,6 +1,18 @@
-* {
+html {
+  height: 100%;
 }
-
+body {
+  height: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Pretendard", sans-serif;
+  fotn-weight: 400;
+  color: #333;
+}
 :root {
   --viewport1440: 1440;
   --viewport768: 768;
@@ -8,25 +20,6 @@
   --vwPercent: 100vw;
   --viewport-height: 100dvh;
 }
-
-body {
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: "Pretendard", sans-serif;
-  fotn-weight: 400;
-  color: #333;
-  margin: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.common_content {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 100px;
-  box-sizing: border-box;
-}
-
 .wrap {
   position: relative;
   top: 0;
@@ -36,16 +29,11 @@ body {
 }
 .container {
   width: 100%;
-  height: auto;
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
 }
-@media (min-width: 768px) {
-  .container {
-    height: 100vh;
-  }
-}
-
 /* .container:nth-child(1) {
   background-color: green;
 }
@@ -60,7 +48,7 @@ body {
 } */
 section {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +56,6 @@ section {
 
 .left-ul {
   position: fixed;
-  left: 2%;
   bottom: 40%;
   background: transparent;
   border: none;
@@ -153,7 +140,7 @@ section {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  z-index: 999;
+  z-index: 1000;
   & .video1 {
     display: block;
     position: absolute;
@@ -231,7 +218,7 @@ section {
   .mission-container {
     overflow-y: auto;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     box-sizing: border-box;
   }
   .s2-strong {
@@ -290,7 +277,7 @@ section {
   height: 100%;
   padding: 0;
   list-style: none;
-  gap: 10px;
+  gap: 2%;
   overflow-y: auto;
   max-height: 80vh;
   & > li {
@@ -349,7 +336,7 @@ section {
   .goal-container {
     overflow-y: auto;
     width: 100%;
-    height: auto;
+    height: 100%;
     box-sizing: border-box;
   }
   .goal-ul {
@@ -536,30 +523,34 @@ section {
 }
 @media screen and (max-width: 767px) {
   .work-container {
-    margin-top: 40px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100vh;
   }
   .work-ul {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    overflow-y: auto;
+    height: calc(160 / var(--viewport320) * var(--vwPercent));
+    & li {
+      width: 100%;
+      height: calc(160 / var(--viewport320) * var(--vwPercent));
+    }
   }
   .work-content-cont {
-    width: calc(280 / var(--viewport320) * var(--vwPercent));
-    height: calc(200 / var(--viewport320) * var(--vwPercent));
-    margin-bottom: 20px;
-    padding: calc(16 / var(--viewport320) * var(--vwPercent)) 0;
+    width: 50%;
+    height: calc(160 / var(--viewport320) * var(--vwPercent));
+    padding: calc(6 / var(--viewport320) * var(--vwPercent)) 0;
     & span {
       font-size: calc(14 / var(--viewport320) * var(--vwPercent));
     }
     & img {
-      bottom: calc(40 / var(--viewport320) * var(--vwPercent));
+      bottom: calc(15 / var(--viewport320) * var(--vwPercent));
       width: calc(60 / var(--viewport320) * var(--vwPercent));
       height: calc(60 / var(--viewport320) * var(--vwPercent));
     }
     & .shadow {
-      bottom: calc(35 / var(--viewport320) * var(--vwPercent));
       width: calc(40 / var(--viewport320) * var(--vwPercent));
       height: calc(8 / var(--viewport320) * var(--vwPercent));
+      bottom: calc(14 / var(--viewport320) * var(--vwPercent));
     }
   }
   .s4-strong {
@@ -577,11 +568,11 @@ section {
     border-width: calc(1 / var(--viewport320) * var(--vwPercent));
     font-size: calc(5 / var(--viewport320) * var(--vwPercent));
   }
-  .btn-cont {
+  /* .btn-cont {
     display: block;
     margin-top: calc(30 / var(--viewport320) * var(--vwPercent));
-  }
-  .btn {
+  } */
+  /* .btn {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -593,10 +584,5 @@ section {
       calc(26 / var(--viewport320) * var(--vwPercent));
     font-size: calc(14 / var(--viewport320) * var(--vwPercent));
     line-height: 1.57142857;
-    margin-bottom: 20px;
-    & img {
-      width: calc(16 / var(--viewport320) * var(--vwPercent));
-      height: calc(16 / var(--viewport320) * var(--vwPercent));
-    }
-  }
+  } */
 }
