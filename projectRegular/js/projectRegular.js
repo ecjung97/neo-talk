@@ -1,13 +1,5 @@
 console.log("temp")
 
-// a 클릭 이벤트 막기
-const click = document.querySelectorAll("a")
-click.forEach((c) => {
-  c.addEventListener("click", (e) => {
-    e.preventDefault()
-  })
-})
-
 // sound on/off
 const soundControl = () => {
   const btnMute = document.querySelector(".btn-mute")
