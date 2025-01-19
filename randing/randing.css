@@ -141,6 +141,14 @@
   font-weight: 400;
   text-indent: 2px;
 }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1712px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 200px;
+}
 
 @media only screen and (min-width: 879px) {
   .banner {
@@ -942,14 +950,6 @@ a {
   display: block;
   height: 100%;
   min-width: 100%;
-}
-.main-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1712px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 200px;
 }
 
 @media screen and (max-width: 1902px) {
