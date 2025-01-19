@@ -1,54 +1,171 @@
- // 전역 변수
- let currentX = 0;           // translateX 값
- let speed = 1;             // 이동 속도
- let isSliding = false;      // 슬라이딩 상태 (true=움직임, false=멈춤)
- let animationFrameId = null;
+// 전역 변수
+let currentX = 0;           // translateX 값
+let speed = 1;              // 이동 속도
+let isSliding = false;      // 슬라이딩 상태 (true=움직임, false=멈춤)
+let animationFrameId = null;
 
- const sliderWrap = document.getElementById('carouselStory');
- const button = document.querySelector('.carousel-control');
+const sliderWrap = document.getElementById('carouselStory');
+const button = document.getElementById('startButton');
 
- // (1) 애니메이션 함수
- function animate() {
-   if (!isSliding) {
-     // 멈춘 상태라면 더 이상 진행하지 않음
-     return;
-   }
+// (1) 버튼 상태 업데이트 함수
+function updateButtonState() {
+  // 기존 SVG 제거
+  while (button.firstChild) {
+    button.removeChild(button.firstChild);
+  }
 
-   currentX -= speed;
+  // 새로운 SVG 추가
+  const svg = document.createElement('img');
+  if (isSliding) {
+    svg.src = './randing/assets/stop.svg'; // 슬라이드 진행 중이면 stop.svg
+    svg.alt = '슬라이드 멈춤';
+  } else {
+    svg.src = './randing/assets/start.svg'; // 멈춘 상태면 start.svg
+    svg.alt = '슬라이드 시작';
+  }
+  svg.classList.add('button-icon');
+  button.appendChild(svg);
+}
 
-   // 첫 번째 UL 찾기
-   const firstUl = sliderWrap.querySelector('.list-story');
-   const firstUlWidth = firstUl.scrollWidth;
+// (2) 애니메이션 함수
+function animate() {
+  if (!isSliding) {
+    // 멈춘 상태라면 더 이상 진행하지 않음
+    return;
+  }
 
-   // 한 세트 폭만큼 이동하면 0으로 되돌림
-   if (Math.abs(currentX) >= firstUlWidth) {
-     currentX = 0;
-   }
+  currentX -= speed;
 
-   // 이동 적용
-   sliderWrap.style.transform = `translateX(${currentX}px)`;
+  // 첫 번째 UL 찾기
+  const firstUl = sliderWrap.querySelector('.list-story');
+  const firstUlWidth = firstUl.scrollWidth;
 
-   // 다음 프레임 요청
-   animationFrameId = requestAnimationFrame(animate);
- }
+  // 한 세트 폭만큼 이동하면 0으로 되돌림
+  if (Math.abs(currentX) >= firstUlWidth) {
+    currentX = 0;
+  }
 
- // (2) 버튼 클릭 시 슬라이드 토글
- button.addEventListener('click', () => {
-   if (!isSliding) {
-     // 슬라이드 시작
-     isSliding = true;
+  // 이동 적용
+  sliderWrap.style.transform = `translateX(${currentX}px)`;
+
+  // 다음 프레임 요청
+  animationFrameId = requestAnimationFrame(animate);
+}
+
+// (3) 버튼 클릭 시 슬라이드 토글
+button.addEventListener('click', () => {
+  if (!isSliding) {
+    // 슬라이드 시작
+    isSliding = true;
+
+    // 중복 실행 방지 위해 기존 프레임 취소
+    cancelAnimationFrame(animationFrameId);
+    animationFrameId = requestAnimationFrame(animate);
+  } else {
+    // 슬라이드 멈춤
+    isSliding = false;
+
+    // 멈추면 다음 프레임에서 animate()가 종료됨
+    cancelAnimationFrame(animationFrameId);
+  }
+
+  // 버튼 상태 업데이트
+  updateButtonState();
+});
+
+// (4) 페이지 로드 시 초기화
+document.addEventListener('DOMContentLoaded', () => {
+  // 초기 상태에서 슬라이드 정지
+  isSliding = false;
+  updateButtonState(); // 버튼 상태를 "start.svg"로 설정
+});
+
+// (5) 스크롤 이벤트에 따른 UI 변경
+window.addEventListener('scroll', () => {
+  const banner = document.querySelector('.banner');
+  const titleContainer = document.querySelector('.title-continer');
+  const scrollNavWrap = document.querySelector('.scrollNavWrap');
+  const bannerHeight = banner.offsetHeight; // 배너 높이
+
+  // 스크롤 위치가 배너 높이의 10% 이상일 때 변경
+  if (window.scrollY > bannerHeight * 0.1) {
+    banner.classList.add("resize");
+
+    // 타이틀 컨테이너 숨김
+    titleContainer.style.opacity = "0";
+    titleContainer.style.transform = "translateY(-20px)";
+    titleContainer.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+
+    // 스크롤 내비게이션 숨김
+    scrollNavWrap.style.opacity = "0";
+    scrollNavWrap.style.transform = "translateY(-20px)";
+    scrollNavWrap.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+  } else {
+    banner.classList.remove("resize");
+
+    // 타이틀 컨테이너 표시
+    titleContainer.style.opacity = "1";
+    titleContainer.style.transform = "translateY(0)";
+    titleContainer.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+
+    // 스크롤 내비게이션 표시
+    scrollNavWrap.style.opacity = "1";
+    scrollNavWrap.style.transform = "translateY(0)";
+    scrollNavWrap.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+  }
+});
+
+//  // 전역 변수
+//  let currentX = 0;           // translateX 값
+//  let speed = 1;             // 이동 속도
+//  let isSliding = false;      // 슬라이딩 상태 (true=움직임, false=멈춤)
+//  let animationFrameId = null;
+
+//  const sliderWrap = document.getElementById('carouselStory');
+//  const button = document.querySelector('.carousel-control');
+
+//  // (1) 애니메이션 함수
+//  function animate() {
+//    if (!isSliding) {
+//      // 멈춘 상태라면 더 이상 진행하지 않음
+//      return;
+//    }
+
+//    currentX -= speed;
+
+//    // 첫 번째 UL 찾기
+//    const firstUl = sliderWrap.querySelector('.list-story');
+//    const firstUlWidth = firstUl.scrollWidth;
+
+//    // 한 세트 폭만큼 이동하면 0으로 되돌림
+//    if (Math.abs(currentX) >= firstUlWidth) {
+//      currentX = 0;
+//    }
+
+//    // 이동 적용
+//    sliderWrap.style.transform = `translateX(${currentX}px)`;
+
+//    // 다음 프레임 요청
+//    animationFrameId = requestAnimationFrame(animate);
+//  }
+
+//  // (2) 버튼 클릭 시 슬라이드 토글
+//  button.addEventListener('click', () => {
+//    if (!isSliding) {
+//      // 슬라이드 시작
+//      isSliding = true;
   
-     // 중복 실행 방지 위해 기존 프레임 취소
-     cancelAnimationFrame(animationFrameId);
-     animationFrameId = requestAnimationFrame(animate);
-   } else {
-     // 슬라이드 멈춤
-     isSliding = false;
+//      // 중복 실행 방지 위해 기존 프레임 취소
+//      cancelAnimationFrame(animationFrameId);
+//      animationFrameId = requestAnimationFrame(animate);
+//    } else {
+//      // 슬라이드 멈춤
+//      isSliding = false;
   
-     // 멈추면 다음 프레임에서 animate()가 종료됨
-     cancelAnimationFrame(animationFrameId);
-   }
- });
+//      // 멈추면 다음 프레임에서 animate()가 종료됨
+//      cancelAnimationFrame(animationFrameId);
+//    }
+//  });
 
 
 

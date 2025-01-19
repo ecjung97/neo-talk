@@ -293,6 +293,7 @@ font-size: 30px;
 /* 캐러셀 */
 .carousel {
   overflow: hidden;
+  margin: 0 auto;
 }
 .title-container {
   width: 1712px;
@@ -309,6 +310,11 @@ font-size: 30px;
 .inner_card {
   padding: 40px 40px 30px;
 }
+
+.carousel-control {
+border: 0px;
+}
+
 
 .carousel-icon {
   width: 78px;
