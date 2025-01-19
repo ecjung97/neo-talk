@@ -290,15 +290,18 @@
 .carousel {
   overflow: hidden;
 }
-
+.title-container {
+  width: 1712px;
+  margin: 0 auto;
+}
 
 .content-title {
   text-align: left;
   font-size: 52px;
   font-weight: 400;
-  line-height: 78px;
-  /* margin: 0px 242px; */
+  margin: 0px 242px;
   display: flex;
+  justify-content: space-between;
 }
 .inner_card {
   padding: 40px 40px 30px;
@@ -444,11 +447,6 @@
   .wrap_thumb {
     height: 179px !important;
   }
-  .content-title {
-    
-    font-size: 48px;
-    line-height: 72px;
-  }
 }
 @media screen and (max-width: 1439px) {
   .item-container {
@@ -462,11 +460,6 @@
   }
   .wrap_thumb {
     height: 174px;
-  }
-  .content-title {
-    
-    font-size: 32px;
-    line-height: 48px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -664,16 +657,10 @@
   .news-item-3 {
     display: none;
   }
-  .content-title {
-    
-    font-size: 26px;
-    line-height: 46px;
-  }
 }
 
 .boxs-container {
   display: flex;
-  width: 100%;
 }
 
 .box {
@@ -749,6 +736,7 @@ span.title-label::after {
 
 .title-text {
   background-color: #89dcff;
+  display: inline-block;
   width: 272px;
   height: 58px;
   margin: 2px 2px 0 0;
